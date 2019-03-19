@@ -11,10 +11,12 @@ $fa-font-path: '~font-awesome/fonts';
 
 // 3. Base
 @import 'base/fonts',
-        'base/typography';
+        'base/typography',
+        'base/bases';
 
 // 4. Layout
 @import 'layout/header',
+        'layout/posts',
         'layout/footer';
 
 // 5. Components

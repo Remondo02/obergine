@@ -1,0 +1,31 @@
+main {
+    margin-left: $gutter-large;
+    margin-right: $gutter-large;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    
+    
+}
+
+.date-icone {
+    padding: 0.4em;
+    border-radius: 6px;
+    color: $color-secondary;
+}
+
+.date-valid {
+    background-color: $color-primary;
+    
+}
+
+.date-invalid {
+    background-color: #D9AE64;
+}

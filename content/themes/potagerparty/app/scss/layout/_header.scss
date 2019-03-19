@@ -12,4 +12,12 @@
         justify-content: space-around;
         
     }
+
+    &__head {
+        &__title {
+            color: $color-title-primary;
+            font-size: 1.5em;
+            
+        }
+    }
 }
