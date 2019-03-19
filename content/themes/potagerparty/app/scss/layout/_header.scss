@@ -1,0 +1,15 @@
+.header {
+    background-color: $color-primary;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: $color-secondary;
+
+    &__social-links {
+        width: 10rem;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
