@@ -1,0 +1,85 @@
+.main {
+
+    &__container {
+        margin-left: $gutter-smale / 2;
+        margin-right: $gutter-smale / 2;
+
+        
+        
+        &__main-head {
+            
+            &__top {
+                &__header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    
+                    &__title {
+                        // font-size: 2em;
+                    }
+                    
+                    &__fav {
+                        background-color: $color-primary;
+                        border-style: none;
+                        border-radius: 10px;
+                        color: $color-secondary;
+                        height: 50%;
+                    }
+                }
+                
+                &__category {
+                    color: $color-title-secondary;
+                }
+                
+                &__bot {
+                    margin-bottom: $gutter-smale;
+                    
+                    &__title {
+                        //    font-size: 1.2em;
+                        //    font-weight: 600;
+                    }
+                }
+            }
+            
+            &__image {
+                &__img {
+                    max-width: 50%;
+                }
+            }
+        }
+        
+        &__main-container {
+            &__top {
+                &__content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $gutter-smale/1.5;
+                    &__icones {
+                        color: $color-primary;
+                    }
+                }
+            }
+            
+            &__bot {
+                &__content {
+                    
+                    &__title {
+                        
+                    }
+                    
+                    &__span {
+                        
+                    }
+                    
+                    &__text {
+                        display: flex;
+                        
+                        i {
+                            margin-right: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
