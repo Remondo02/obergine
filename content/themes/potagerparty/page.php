@@ -4,6 +4,6 @@ get_header();
 
 <p>Template page</p>
 
-<?php 
+<?php
 get_footer();
 ?>

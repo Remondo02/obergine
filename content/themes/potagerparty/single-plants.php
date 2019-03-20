@@ -2,8 +2,8 @@
 get_header();
 ?>
 
-<p>Template page single plante</p>
+<p>Template page single plants</p>
 
-<?php 
+<?php
 get_footer();
 ?>

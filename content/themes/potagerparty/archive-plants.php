@@ -2,8 +2,8 @@
 get_header();
 ?>
 
-<p>Template liste des plantes</p>
+<p>Template page liste des plantes</p>
 
-<?php 
+<?php
 get_footer();
 ?>

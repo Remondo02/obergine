@@ -4,6 +4,6 @@ get_header();
 
 <p>Template page de blog</p>
 
-<?php 
+<?php
 get_footer();
 ?>

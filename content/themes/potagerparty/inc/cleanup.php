@@ -1,7 +1,7 @@
 <?php
 
-add_action( 'potagerparty_after_setup_theme', 'potagerparty_theme_cleanup' );
-function potagerparty_theme_cleanup()
+add_action( 'obergine_after_setup_theme', 'obergine_theme_cleanup' );
+function obergine_theme_cleanup()
 {
     remove_action( 'wp_head', 'wp_generator' );
     remove_action( 'wp_head', 'rsd_link' );
