@@ -1,6 +1,11 @@
+body {
+    min-width: 400px;
+}
+
 main {
-    margin-left: $gutter-large;
-    margin-right: $gutter-large;
+    min-width: 400px;
+    
+   
 
     h2 {
         font-size: 2em;
