@@ -1,4 +1,5 @@
 <?php
+
 add_action( 'obergine_after_setup_theme', 'obergine_theme_cleanup' );
 function obergine_theme_cleanup()
 {
