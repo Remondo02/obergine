@@ -8,7 +8,7 @@
     color: $color-secondary;
 
     &__social-links {
-        width: 10rem;
+        width: 5rem;
         display: flex;
         justify-content: space-around;
         
@@ -18,7 +18,12 @@
         &__title {
             color: $color-title-primary;
             font-size: 1.5em;
+            padding-left: 1.2em;
             
         }
+    }
+
+    &__log {
+        margin-left: 1.2em;
     }
 }
