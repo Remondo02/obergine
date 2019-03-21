@@ -3,6 +3,14 @@
     &__post {
 
         margin-bottom: $gutter-smale;
+        padding-bottom: $gutter-smale;
+        border-bottom: 1px solid grey;
+        margin-left: $gutter-smale;
+        margin-right: $gutter-smale;
+
+        &:last-child {
+            border-bottom: none;
+        }
 
         &__head {
 
@@ -12,11 +20,12 @@
             
             &__image {
                 max-width: 45%;
-                padding-left: $gutter-smale;
+                //padding-left: $gutter-smale;
                 
                 
                 &__img {
                     padding-top: $gutter-smale;
+                    padding-left: $gutter-smale;
                     max-width: 100%;
                 }
             }
