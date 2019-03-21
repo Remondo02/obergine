@@ -68,8 +68,17 @@
 
             &__log {
 
-                i {
-                    font-size: 1.5em;
+                &__link {
+
+                    color: $color-primary;
+
+                    :hover {
+                        color: $color-teritary;
+                    }
+                    
+                    i {
+                        font-size: 1.5em;
+                    }
                 }
             }
         }

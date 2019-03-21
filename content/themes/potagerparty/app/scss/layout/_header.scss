@@ -18,6 +18,10 @@
                 width: 5rem;
                 //display: flex;
                 //justify-content: space-around;
+
+                :hover {
+                    color: $color-title-primary;
+                }
             }
            
             
@@ -38,6 +42,14 @@
         
         &__log {
             margin-left: 1.2em;
+            
+            &__link {
+                color: white;
+
+                :hover {
+                    color: $color-title-primary;
+                }
+            }
         }
     }
 
