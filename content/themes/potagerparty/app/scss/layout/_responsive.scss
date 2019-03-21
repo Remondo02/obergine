@@ -44,17 +44,25 @@
 
             &__social-links {
 
-                i {
-                    font-size: 1.5em;
-                    padding-right: 1em;
-                    
-                    &:last-child {
-    
-                        padding: inherit;
-                        
-                    }
+                :hover {
+                    color: $color-teritary;
                 }
 
+                &__link {
+
+                    font-size: 1.5em;
+                    padding-right: 1em;
+                    color: $color-primary;
+
+                    &:last-child {
+                        
+                        padding: inherit;
+                        
+                        
+                    }
+                    
+                }
+                    
 
             }
 

@@ -12,9 +12,13 @@
         color: $color-secondary;
         
         &__social-links {
-            width: 5rem;
-            display: flex;
-            justify-content: space-around;
+
+            &__link {
+                color: $color-secondary;
+                width: 5rem;
+                //display: flex;
+                //justify-content: space-around;
+            }
            
             
         }
