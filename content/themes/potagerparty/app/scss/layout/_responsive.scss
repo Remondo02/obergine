@@ -88,5 +88,35 @@
         }
     }
 
+    .main {
+
+        &__container {
+            margin-left: $gutter-smale;
+            margin-right: $gutter-smale;
+        }
+    }
+
       
+}
+
+@media (min-width: 992px) {
+
+    .main {
+
+        &__container {
+            margin-left: $gutter;
+            margin-right: $gutter;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .main {
+
+        &__container {
+            margin-left: $gutter-large;
+            margin-right: $gutter-large;
+        }
+    }
 }
