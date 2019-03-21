@@ -8,7 +8,8 @@
     "require": {
         "johnpbloch/wordpress": "^5.1",
         "wpackagist-theme/twentynineteen":"1.3",
-        "wpackagist-plugin/advanced-custom-fields":"5.7.12"
+        "wpackagist-plugin/advanced-custom-fields":"5.7.12",
+        "woocommerce/woocommerce": "^3.5"
     },
     "require-dev": {
         "wpackagist-plugin/what-the-file": "1.5.4",
