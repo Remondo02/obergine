@@ -1,4 +1,4 @@
-# Potager-party
+# O'bergine
 
 ## Description du projet
 
