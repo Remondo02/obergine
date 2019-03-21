@@ -8,6 +8,7 @@
 /content/uploads
 
 /content/plugins/*
+!/content/plugins/obergine-settings
 
 /content/themes/*
 !/content/themes/obergine
