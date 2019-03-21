@@ -104,6 +104,8 @@
         }
     }
 
+    
+
     // article page
 
     .main {
@@ -114,8 +116,16 @@
         }
     }
 
-    
+    // Banner
+    .main {
 
+        .banner {
+            &__container {
+                left: 30%;
+            }
+        }
+        
+    }
     
 
       
@@ -152,6 +162,17 @@
 
 
     }
+
+    // Banner
+    .main {
+
+        .banner {
+            &__container {
+                left: 30%;
+            }
+        }
+        
+    }
 }
 
 @media (min-width: 1200px) {
@@ -163,6 +184,17 @@
             margin-right: $gutter-large;
         }
 
+    }
+
+    // Banner
+    .main {
+
+        .banner {
+            &__container {
+                left: 40%;
+            }
+        }
+        
     }
             
 
