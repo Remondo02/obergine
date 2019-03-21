@@ -15,6 +15,7 @@
             width: 5rem;
             display: flex;
             justify-content: space-around;
+           
             
         }
         
@@ -23,7 +24,11 @@
                 color: $color-title-primary;
                 font-size: 1.5em;
                 padding-left: 1.2em;
-                
+
+                &__span {
+                    color: white;
+                }
+
             }
         }
         
@@ -74,7 +79,8 @@
                 }
 
                 &__menu-link {
-
+                    
+                    
                     
                     :hover {
                         background-color: $color-primary;

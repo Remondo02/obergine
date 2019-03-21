@@ -46,7 +46,7 @@
                 }
                 
                 &__category {
-                    color: $color-title-secondary;
+                   color: $color-title-secondary;
                 }
                 
                 &__bot {
@@ -122,8 +122,9 @@
 
                 &__content {
 
-                    &__text {
+                    &__link {
                         margin-top: $gutter-smale / 4;
+                        color: black
                     }
                 }
 
