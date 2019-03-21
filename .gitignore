@@ -10,6 +10,6 @@
 /content/plugins/*
 
 /content/themes/*
-!/content/themes/potagerparty
+!/content/themes/obergine
 
 content/db.php
