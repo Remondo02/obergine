@@ -7,6 +7,20 @@
         }
     }
 
+    // Home page
+
+    .home-page__group {
+
+        border-bottom: 1px solid $color-border-primary;
+        margin-left: $gutter-smale;
+        margin-right: $gutter-smale;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+    }
+
     
             
      
@@ -90,6 +104,8 @@
         }
     }
 
+    // article page
+
     .main {
 
         &__container {
@@ -97,6 +113,10 @@
             margin-right: $gutter-smale;
         }
     }
+
+    
+
+    
 
       
 }
@@ -110,6 +130,28 @@
             margin-right: $gutter;
         }
     }
+
+    // home page
+
+    .main {
+
+        
+        .home-page__post {
+            
+            border-bottom: none;
+            // border-right: 1px solid $color-border-primary;
+            // margin-bottom: 2em;
+            // margin-top: 2em;
+            
+        }
+    }
+
+    .home-page__group {
+
+        display: flex;
+
+
+    }
 }
 
 @media (min-width: 1200px) {
@@ -120,5 +162,9 @@
             margin-left: $gutter-large;
             margin-right: $gutter-large;
         }
+
     }
+            
+
+    
 }
