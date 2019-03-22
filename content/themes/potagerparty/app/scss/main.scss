@@ -22,10 +22,12 @@ $fa-font-path: '~font-awesome/fonts';
         'layout/footer';
 
 // 5. Components
+@import 'components/button';
 
 // 6. Pages
 @import 'pages/home',
         'pages/404',
+        'pages/about-page',
         '/pages/faq-page',
         'pages/filters-page',
         'pages/articles-list-page';
