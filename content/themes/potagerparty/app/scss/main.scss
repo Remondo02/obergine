@@ -24,4 +24,5 @@ $fa-font-path: '~font-awesome/fonts';
 // 5. Components
 
 // 6. Pages
-@import 'pages/home';
+@import 'pages/home',
+        'pages/articles-list-page';
