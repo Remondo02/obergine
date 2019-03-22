@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+<header class="header">
+    <div class="header__header-up">
+
+        <div class="header__header-up__social-links">
+            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-facebook-f"></i></a>
+            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-instagram"></i></a>
+        
+        </div>
+        
+        <div class="header__header-up__head">
+            <h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1>
+        </div>
+        
+        
+        
+        <div class="header__header-up__log">
+            <a class="header__header-up__log__link" href="#"><i class="fa fa-user"></i></a>
+        
+        </div>
+        
+        <!-- Navigation menu burger -->
+        <div class="header__header-up__nav">
+            <nav class="header__header-up__nav navbar navbar-expand-lg navbar-light">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header__header-bot mobile-hide">
+        <div class="header__header-bot__search-bar">
+            <form class="header__header-bot__search-bar__form">
+                <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" >
+                
+            </form>
+        </div>
+
+        <div class="header__header-bot__menu">
+            <ul class="header__header-bot__menu__list">
+                <li class="header__header-bot__menu__list__menu-link">
+                <a href="header__header-bot__menu__list__menu-link__link">Plantes potagères</a>
+                </li>
+                <li class="header__header-bot__menu__list__menu-link">
+                <a href="header__header-bot__menu__list__menu-link__link">Blog</a>
+                </li>
+                <li class="header__header-bot__menu__list__menu-link">
+                <a href="header__header-bot__menu__list__menu-link__link">Boutique</a>
+                </li>
+                <li class="header__header-bot__menu__list__menu-link">
+                <a href="header__header-bot__menu__list__menu-link__link">Contact</a>
+                </li>
+                
+                
+            </ul>
+        </div>
+</div>
+        
+</header>
+
+<main class="main articles-list-page fiters-page">
+
+    <section class="articles-list-page__filters">
+        <div class="articles-list-page__filters__filters-list">
+
+            <h2 class="articles-list-page__filters__filters-list__title">Filtres</h2>
+            <ul class="articles-list-page__filters__filters-list__list">
+                <li class="articles-list-page__filters__filters-list__list__item difficult"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Difficulté <i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                
+
+                <li class="articles-list-page__filters__filters-list__list__item water"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Eau <i class="fa fa-tint" aria-hidden="true"></i></a></li>
+
+                <li class="articles-list-page__filters__filters-list__list__item location"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Emplacement <i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+
+                <li class="articles-list-page__filters__filters-list__list__item family"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Famille <i class="fa fa-home" aria-hidden="true"></i></a></li>
+
+                <li class="articles-list-page__filters__filters-list__list__item harvest"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Récolte <i class="fa fa-leaf" aria-hidden="true"></i></a></li>
+
+                <li class="articles-list-page__filters__filters-list__list__item seedling"><a class="articles-list-page__filters__filters-list__list__item__link" href="#">Semis <i class="fa fa-pagelines" aria-hidden="true"></i></a></li>
+                
+            </ul>
+        </div>
+
+    </section> 
+
+   
+    </main>
+    
+    
+<footer class="footer">
+    <nav class="footer__nav">
+        <ul class="footer__nav__list">
+        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Contact</a></li>
+
+        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Mentions légales</a></li>
+        </ul>
+    </nav>
+
+    <div class="footer__social-link">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+
+    <div class="footer__newsletter">
+        <span class="footer__newsletter__span">Abonnez-vous à la newsletter</span>
+        <form method="post" action="" class="footer__newsletter__form">
+        <input class="footer__newsletter__form__input" type="email" name="email" placeholder="Votre email" required>
+        <button><i class="fa fa-check" aria-hidden="true"></i></button>
+        </form>
+    </div>
+
+</footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
