@@ -1,6 +1,9 @@
 <?php
 class Custom_Post_Type_Plant
 {
+
+    const POST_TYPE = 'plant';
+
     public function __construct()
     {
         // Dans un contexte objet, le callable est de type tableau avec en première valeur l'instance de notre classe et en deuxième le nom de la méthode à exécuter
@@ -10,7 +13,7 @@ class Custom_Post_Type_Plant
     {
         // @link https://codex.wordpress.org/Function_Reference/register_post_type
         register_post_type(
-            'plant', // le nom du post type
+            self::POST_TYPE,
             [
                 'labels' => [ // Les textes d'affichage dans le backoffice
                     'name'               => 'Plantes potagères',

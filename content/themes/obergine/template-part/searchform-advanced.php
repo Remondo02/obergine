@@ -6,15 +6,19 @@
     <input type="hidden" name="search" value="advanced">
 
     <label for="s" class=""><?php _e( 'Name: ', 'textdomain' ); ?></label><br>
-    <input type="text" value="" placeholder="<?php _e( 'Type the Car Name', 'textdomain' ); ?>" name="s" id="name" />
+    <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
 
-    <label for="model" class=""><?php _e( 'Select a Model: ', 'textdomain' ); ?></label><br>
-    <select name="model" id="model">
-        <option value=""><?php _e( 'Select one...', 'textdomain' ); ?></option>
-        <option value="model1"><?php _e( 'Model 1', 'textdomain' ); ?></option>
-        <option value="model2"><?php _e( 'Model 2', 'textdomain' ); ?></option>
+    <label for="water" class=""><?php _e( 'Besoin en eau : ', 'textdomain' ); ?></label><br>
+    <select name="water" id="water">
+        
+        <option value=""><?php _e( 'Defaut', 'textdomain' ); ?></option>
+        <option value="Faible"><?php _e( 'Faible', 'textdomain' ); ?></option>
+        <option value="Moyen"><?php _e( 'Moyen', 'textdomain' ); ?></option>
+        <option value="Fort"><?php _e( 'Fort', 'textdomain' ); ?></option>
+
     </select>
 
     <input type="submit" id="searchsubmit" value="Search" />
 
 </form>
+
