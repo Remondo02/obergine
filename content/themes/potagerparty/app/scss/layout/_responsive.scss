@@ -126,6 +126,53 @@
         }
         
     }
+
+    // articles-list-page
+
+    .articles-list-page {
+        display: flex;
+
+        &__main {
+            max-width: 65%;
+
+           
+        }
+
+        &__filters {
+
+            
+
+            margin-top: $gutter;
+
+            //border-right: 1px solid $color-border-primary;
+            
+            &__filters-list {
+
+                //position: fixed;
+
+                
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+
+                    &__item {
+
+                        &__link {
+
+                            &:hover {
+                                background-color: $color-background-primary; !important;
+                                // text-decoration: none;
+                                // border: 1px solid blue;
+                                
+                            }
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
     
 
       
