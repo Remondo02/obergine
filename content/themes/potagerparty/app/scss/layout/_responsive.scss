@@ -173,6 +173,20 @@
             }
         }
     }
+
+    // Filter-page 
+        
+    .articles-list-page__filters {
+        
+        margin-top: $gutter-smale / 4;
+        margin-left: $gutter-smale;
+        margin-bottom: $gutter-smale / 2;
+    }
+    
+    .articles-list-page__filters__filters-list__list {
+        margin-bottom: $gutter-large;
+    }
+    
     
 
       
