@@ -18,8 +18,18 @@ $fa-font-path: '~font-awesome/fonts';
 @import 'layout/header',
         'layout/posts',
         'layout/responsive',
+        'layout/banner',
         'layout/footer';
 
 // 5. Components
+@import 'components/button';
 
 // 6. Pages
+@import 'pages/home',
+        'pages/legale-mentions-page',
+        'pages/contact-page',
+        'pages/404',
+        'pages/about-page',
+        '/pages/faq-page',
+        'pages/filters-page',
+        'pages/articles-list-page';

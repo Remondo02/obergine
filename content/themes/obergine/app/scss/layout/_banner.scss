@@ -1,0 +1,51 @@
+.banner {
+    background: {
+        position: top right;
+        size: cover;
+    }
+    color: $color-border-primary;
+    height: 75vh;
+    position: relative;
+    z-index: 0;
+
+    &__container {
+        left: 15%;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > * {
+            //width: 45vw;
+        }
+
+        &__button {
+            border: none;
+            background-color: $color-primary;
+            color: white;
+            width: 5em;
+            border-radius: 6px;
+            font-weight: 600;
+            
+        }
+
+    }
+
+    &::after {
+        background: linear-gradient(
+            to right,
+            transparentize(#000, 0.5),
+            transparent
+        );
+
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
