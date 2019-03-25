@@ -17,18 +17,36 @@
                     &__title {
                         // font-size: 2em;
                     }
-                    
-                    &__fav {
-                        background-color: $color-primary;
-                        border-style: none;
-                        border-radius: 10px;
-                        color: $color-secondary;
-                        height: 50%;
+
+                    &__button {
+
+                        display: flex;
+                        flex-direction: column;
+                        
+                        >button {
+                            margin-bottom: $gutter-smale / 4;
+                            border-radius: 10px;
+                            border-style: none;
+                            height: 50%;
+
+                        }
+                        
+                        &__fav {
+                            background-color: $color-primary;
+                            color: $color-secondary;
+
+                        }
+
+                        &__buy {
+                            background-color: $color-teritary;
+                            color: $color-secondary;
+                            
+                        }
                     }
                 }
                 
                 &__category {
-                    color: $color-title-secondary;
+                   color: $color-title-secondary;
                 }
                 
                 &__bot {
@@ -81,5 +99,38 @@
                 }
             }
         }
+
+        &__article {
+            &__title {
+
+                text-transform: uppercase;
+                border-bottom: 1px solid grey;
+                padding-bottom: $gutter-smale / 4;
+                margin-top: $gutter-smale;
+                margin-bottom: $gutter-smale;
+
+            }
+
+            &__container {
+
+                display: flex;
+                flex-wrap: wrap;
+
+                >div {
+                    margin-right: $gutter-smale;
+                }
+
+                &__content {
+
+                    &__link {
+                        margin-top: $gutter-smale / 4;
+                        color: black
+                    }
+                }
+
+            }
+
+        }
+
     }
 }

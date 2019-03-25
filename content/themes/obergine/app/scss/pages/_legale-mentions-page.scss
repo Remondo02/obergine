@@ -1,0 +1,14 @@
+.legal-mentions {
+
+    &__container {
+        margin: $gutter $gutter-smale;
+
+        &__title {
+            border-bottom: 1px solid $color-border-primary;
+            margin-right: 3em;
+            margin-bottom: $gutter-smale / 3;
+            padding-bottom: $gutter-smale / 4;
+            
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+.page-404 {
+    color: $color-title-primary;
+    font-weight: 600;
+
+    &__content {
+
+        text-align: center;
+        margin-bottom: $gutter-smale / 2;
+
+        &__title {
+            margin-bottom: $gutter-smale / 4;
+        }
+
+        &__link {
+            
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+
+        &__img {
+            max-width: 100%;
+        }
+    }
+}
