@@ -1,130 +1,30 @@
 .header {
     background-color: $color-primary;
     margin-bottom: $gutter-smale / 2;
+    
 
-    &__header-up {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: $color-secondary;
 
-        
-        
+    &__social-links {
+        width: 5rem;
         display: flex;
         justify-content: space-around;
-        align-items: baseline;
-        color: $color-secondary;
         
-        &__social-links {
+    }
 
-            &__link {
-                color: $color-secondary;
-                width: 5rem;
-                //display: flex;
-                //justify-content: space-around;
-
-                :hover {
-                    color: $color-title-primary;
-                }
-            }
-           
+    &__head {
+        &__title {
+            color: $color-title-primary;
+            font-size: 1.5em;
+            padding-left: 1.2em;
             
-        }
-        
-        &__head {
-            &__title {
-                color: $color-title-primary;
-                font-size: 1.5em;
-                padding-left: 1.2em;
-
-                &__span {
-                    color: white;
-                }
-
-            }
-        }
-        
-        &__log {
-            margin-left: 1.2em;
-            
-            &__link {
-                color: white;
-
-                :hover {
-                    color: $color-title-primary;
-                }
-            }
         }
     }
 
-    &__header-bot {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: $gutter-smale / 2;
-
-        &__search-bar {
-            
-            &__form {
-                width: 25em;
-                margin-left: 4em;
-                
-                
-                
-
-                &__input {
-                    width: 100%;
-                    border: 1px solid $color-primary;
-                    border-radius: 10px;
-
-                    
-
-                   
-                }
-
-            }
-        }
-
-        &__menu {
-
-            margin-top: $gutter-smale / 2;
-            width: 60%;
-            
-            &__list {
-                display: flex;
-                justify-content: space-between;
-
-                :last-child {
-                    border: none;
-                }
-
-                &__menu-link {
-                    
-                    
-                    
-                    :hover {
-                        background-color: $color-primary;
-                        border-radius: 10px;
-                        padding: 0.5em;
-                        color: white;
-                        text-decoration: none;
-                        font-weight: 600;
-                    }
-
-                    >a {
-                        color: black;
-
-                        
-                    }
-                    
-                }
-                
-            }
-        }
+    &__log {
+        margin-left: 1.2em;
     }
 }
-
-// .header__header-bot__search-bar__form__input {
-//     &::after {
-//         @include fa-icon();
-//         content: $fa-var-search;
-//     }
-
-
-// }

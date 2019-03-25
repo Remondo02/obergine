@@ -1,0 +1,16 @@
+/vendor
+/wp
+
+/wp-config.php
+
+/content/languages
+/content/upgrade
+/content/uploads
+
+/content/plugins/*
+!/content/plugins/obergine-settings
+
+/content/themes/*
+!/content/themes/obergine
+
+content/db.php
