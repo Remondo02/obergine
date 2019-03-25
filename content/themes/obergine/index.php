@@ -8,7 +8,7 @@ get_header();
 
 <?php
 
-get_template_part( 'advanced', 'searchform' );
+get_template_part( 'template-part/searchform-advanced' );
 
 echo('Template page plantes');
 
