@@ -1,6 +1,9 @@
 <footer class="footer">
     <nav class="footer__nav">
+
         <ul class="footer__nav__list">
+                <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
+
         <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Contact</a></li>
 
         <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Mentions légales</a></li>

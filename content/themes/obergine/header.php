@@ -6,7 +6,6 @@
   <?php wp_head(); ?>
   <title><?php bloginfo('name'); ?></title>
  
-  
 </head>
 <body>
   <!-- Header -->
@@ -42,7 +41,7 @@
                     <a class="nav-link" href="<?php echo home_url(); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                    <?php wp_nav_menu( array('theme_location' => 'premier') ); ?>
+                    <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
                     <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -75,7 +74,7 @@
 
         <div class="header__header-bot__menu">
             
-                <?php wp_nav_menu( array('theme_location' => 'premier') ); ?>
+                <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
                 
                 
             </ul>
