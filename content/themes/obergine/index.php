@@ -8,6 +8,10 @@ get_header();
 
 <?php
 
+
+
+get_search_form();
+
 get_template_part( 'template-part/searchform-advanced' );
 
 echo('Template page plantes');
