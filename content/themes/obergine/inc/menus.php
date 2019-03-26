@@ -1,5 +1,5 @@
 <?php
-add_action( 'init', 'obergine_nav_menus' );
+add_action( 'after_setup_theme', 'obergine_nav_menus' );
 //ajouter une nouvelle zone de menu à mon thème
 function obergine_nav_menus()
 {

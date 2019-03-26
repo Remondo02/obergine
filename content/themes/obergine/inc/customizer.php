@@ -14,7 +14,7 @@ function obergine_customize_register( $wp_customize )
     $wp_customize->add_panel(
         $panel_id,
         [
-            'title'       => 'Configuration du thème obergine',
+            'title'       => '* Configuration du thème obergine *',
             'description' => 'Options de configuration du thème obergine',
             'priority'    => 1
         ]

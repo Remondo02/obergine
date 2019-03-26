@@ -24,11 +24,8 @@
         <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1></a>
         </div>
         
-        
-        
         <div class="header__header-up__log">
             <a class="header__header-up__log__link" href="#"><i class="fa fa-user"></i></a>
-        
         </div>
         
         <!-- Navigation menu burger -->
@@ -42,9 +39,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo home_url(); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                    <?php wp_nav_menu( array('theme_location' => 'premier') ); ?>
                     <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -76,19 +74,9 @@
         </div>
 
         <div class="header__header-bot__menu">
-            <ul class="header__header-bot__menu__list">
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Plantes potagères</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Blog</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Boutique</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Contact</a>
-                </li>
+            
+                <?php wp_nav_menu( array('theme_location' => 'premier') ); ?>
+                
                 
             </ul>
         </div>
