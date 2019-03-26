@@ -34,6 +34,7 @@ class Custom_Post_Type_Banner
                     'revisions',
                 ],
                 'has_archive'      => false,
+                'show_ui'            => true, // Afficher ou non notre post type dans le backoffice
                 'can_export'       => true,
                 'delete_with_user' => false,
                 'show_in_rest'     => true
