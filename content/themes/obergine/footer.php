@@ -20,7 +20,7 @@
         <button><i class="fa fa-check" aria-hidden="true"></i></button>
         </form>
     </div>
-
+    
 </footer>
 <?php wp_footer(); ?>
 

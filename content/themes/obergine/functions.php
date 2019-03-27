@@ -8,5 +8,6 @@ require get_theme_file_path('inc/menus.php');
 require get_theme_file_path('inc/cleanup.php');
 require get_theme_file_path('inc/search-query.php');
 require get_theme_file_path('inc/search-bar.php');
+require get_theme_file_path('inc/widget.php');
 
 //require get_theme_file_path('template-part/searchform-advanced.php');
