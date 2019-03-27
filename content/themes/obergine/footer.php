@@ -1,5 +1,6 @@
 <footer class="footer">
     <nav class="footer__nav">
+
         <ul class="footer__nav__list">
         <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
         </ul>
@@ -18,7 +19,7 @@
         <button><i class="fa fa-check" aria-hidden="true"></i></button>
         </form>
     </div>
-
+    
 </footer>
 <?php wp_footer(); ?>
 
