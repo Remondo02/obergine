@@ -4,9 +4,9 @@ function obergine_register_customizer_section_homepage($wp_customize, $panel_id)
     $section_id = 'obergine_theme_section_homepage';
 
     $wp_customize->add_section(
-        'obergine_theme_section_homepage',
+        $section_id,
         [
-            'title' => 'Homepage',
+            'title' => 'Articles page d\'accueil',
             'description' => 'Option de gestion du nombre d\'articles de la home page',
             'panel' => $panel_id
         ]
@@ -35,7 +35,4 @@ function obergine_register_customizer_section_homepage($wp_customize, $panel_id)
             ]
         ]
     );
-   
-    
-    
 }
