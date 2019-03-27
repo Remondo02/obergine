@@ -6,7 +6,6 @@
   <?php wp_head(); ?>
   <title><?php bloginfo('name'); ?></title>
  
-  
 </head>
 <body>
   <!-- Header -->
@@ -24,11 +23,8 @@
         <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1></a>
         </div>
         
-        
-        
         <div class="header__header-up__log">
             <a class="header__header-up__log__link" href="#"><i class="fa fa-user"></i></a>
-        
         </div>
         
         <!-- Navigation menu burger -->
@@ -41,11 +37,9 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                    
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
                     </li>
                     <li class="nav-item dropdown">
                     
@@ -58,7 +52,7 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0">                
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
@@ -76,24 +70,13 @@
         </div>
 
         <div class="header__header-bot__menu">
-            <ul class="header__header-bot__menu__list">
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Plantes potagères</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Blog</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Boutique</a>
-                </li>
-                <li class="header__header-bot__menu__list__menu-link">
-                <a href="header__header-bot__menu__list__menu-link__link">Contact</a>
-                </li>
+            
+                <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
                 
                 
-            </ul>
+            
         </div>
-</div>
+  </div>
         
 </header>
 <body <?php body_class(); ?>>

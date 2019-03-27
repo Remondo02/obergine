@@ -1,9 +1,8 @@
 <footer class="footer">
     <nav class="footer__nav">
-        <ul class="footer__nav__list">
-        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Contact</a></li>
 
-        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Mentions légales</a></li>
+        <ul class="footer__nav__list">
+        <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
         </ul>
     </nav>
 
@@ -15,12 +14,13 @@
 
     <div class="footer__newsletter">
         <span class="footer__newsletter__span">Abonnez-vous à la newsletter</span>
-        <form method="post" action="" class="footer__newsletter__form">
-        <input class="footer__newsletter__form__input" type="email" name="email" placeholder="Votre email" required>
-        <button><i class="fa fa-check" aria-hidden="true"></i></button>
-        </form>
+        <?php
+            echo do_shortcode( '[contact-form-7 id="297" title="Contact form Newsletter" html_class="form"]' );
+        ?>
     </div>
 
+        
+    
 </footer>
 <?php wp_footer(); ?>
 
