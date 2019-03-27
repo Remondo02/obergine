@@ -8,7 +8,7 @@ function obergine_enqueue_scripts()
     );
     wp_enqueue_script(
         'obergine-script',
-        get_theme_file_uri( 'public/css/script.css' ),
+        get_theme_file_uri( 'public/js/app.js' ),
         [],
         false,
         true
