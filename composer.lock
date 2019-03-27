@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ede9849a118e572aee4e30ccffac565c",
+    "content-hash": "3d7d96f8b85e5ff644a8cf6249efa8ec",
     "packages": [
         {
             "name": "composer/installers",
@@ -308,7 +308,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.7.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.7.12.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -326,13 +328,35 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/flamingo",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/flamingo/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/flamingo.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/flamingo/"
         },
         {
             "name": "wpackagist-plugin/var-dumper",
@@ -344,7 +368,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/var-dumper.zip?timestamp=1450719040"
+                "url": "https://downloads.wordpress.org/plugin/var-dumper.zip?timestamp=1450719040",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -362,7 +388,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.3.zip"
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.3.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -382,7 +410,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -400,7 +430,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/what-the-file.1.5.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/what-the-file.1.5.4.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
