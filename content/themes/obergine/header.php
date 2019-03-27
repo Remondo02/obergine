@@ -71,11 +71,7 @@
 
         <div class="header__header-bot__menu">
             
-<<<<<<< HEAD
             <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
-=======
-                <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
->>>>>>> pre-prod
                 
                 
             
