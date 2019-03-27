@@ -86,7 +86,7 @@
             margin-top: $gutter-smale / 2;
             width: 60%;
             
-            &__list {
+            ul {
                 display: flex;
                 justify-content: space-between;
 
@@ -94,7 +94,7 @@
                     border: none;
                 }
 
-                &__menu-link {
+                li {
                     
                     
                     
@@ -120,11 +120,3 @@
     }
 }
 
-// .header__header-bot__search-bar__form__input {
-//     &::after {
-//         @include fa-icon();
-//         content: $fa-var-search;
-//     }
-
-
-// }
