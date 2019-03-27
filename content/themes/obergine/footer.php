@@ -1,9 +1,8 @@
 <footer class="footer">
     <nav class="footer__nav">
-        <ul class="footer__nav__list">
-        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Contact</a></li>
 
-        <li class="footer__nav__list__item"><a class="footer__nav__list__item__link" href="#">Mentions légales</a></li>
+        <ul class="footer__nav__list">
+        <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
         </ul>
     </nav>
 
@@ -20,7 +19,7 @@
         <button><i class="fa fa-check" aria-hidden="true"></i></button>
         </form>
     </div>
-
+    
 </footer>
 <?php wp_footer(); ?>
 
