@@ -1,16 +1,16 @@
 <form method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-    <h3><?php _e( 'Advanced Search', 'textdomain' ); ?></h3>
+    
 
     <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
     <input type="hidden" name="search" value="advanced">
 
-    <label for="s" class=""><?php _e( 'Name: ', 'textdomain' ); ?></label><br>
+    <label for="s" class=""><?php _e( 'Recherche: ', 'textdomain' ); ?></label><br>
     <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
 
 
 
-    <select name="type" id="type">
+    <select class="badge badge-light" name="type" id="type">
         
         <option value=""><?php _e( 'Type', 'textdomain' ); ?></option>
         <option value="Aromates"><?php _e( 'Aromates', 'textdomain' ); ?></option>
@@ -22,7 +22,7 @@
 
 
 
-    <select name="family" id="family">
+    <select class="badge badge-success" name="family" id="family">
         
         <option value=""><?php _e( 'Famille', 'textdomain' ); ?></option>
         <option value="Alliacées"><?php _e( 'Alliacées', 'textdomain' ); ?></option>
@@ -41,14 +41,14 @@
 
 
 
-    <select name="water" id="water">        
+    <select class="badge badge-primary" name="water" id="water">        
         <option value=""><?php _e( 'Besoin en Eau', 'textdomain' ); ?></option>
         <option value="faible"><?php _e( 'Faible', 'textdomain' ); ?></option>
         <option value="moyen"><?php _e( 'Moyen', 'textdomain' ); ?></option>
         <option value="fort"><?php _e( 'Fort', 'textdomain' ); ?></option>
     </select>
 
-    <select name="place" id="place">        
+    <select class="badge badge-secondary" name="place" id="place">        
         <option value=""><?php _e( 'Emplacement', 'textdomain' ); ?></option>
         <option value="Extérieur"><?php _e( 'Extérieur', 'textdomain' ); ?></option>
         <option value="En pleine terre"><?php _e( 'En pleine terre', 'textdomain' ); ?></option>
@@ -58,7 +58,7 @@
 
 
 
-    <select name="difficulty" id="difficulty">        
+    <select class="badge badge-danger" name="difficulty" id="difficulty">        
         <option value=""><?php _e( 'Difficulté', 'textdomain' ); ?></option>
         <option value="Facile"><?php _e( 'Facile', 'textdomain' ); ?></option>
         <option value="Moyenne"><?php _e( 'Moyenne', 'textdomain' ); ?></option>
@@ -66,7 +66,7 @@
     </select>
 
 
-    <select name="spacing" id="spacing">        
+    <select class="badge badge-warning" name="spacing" id="spacing">        
         <option value=""><?php _e( 'Espacement', 'textdomain' ); ?></option>
         <option value="0 - 10 cm"><?php _e( '0 à 10 cm', 'textdomain' ); ?></option>
         <option value="10 - 20 cm"><?php _e( '10 à 20 cm', 'textdomain' ); ?></option>
@@ -79,7 +79,7 @@
         <option value="Supérieur à 80 cm"><?php _e( 'Supérieur à 80 cm', 'textdomain' ); ?></option>
     </select>
 
-    <select name="plant_season" id="plant_season">        
+    <select class="badge badge-info" name="plant_season" id="plant_season">        
         <option value=""><?php _e( 'Saison de semi', 'textdomain' ); ?></option>
         <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
         <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
@@ -87,7 +87,7 @@
         <option value="Hiver"><?php _e( 'Hiver', 'textdomain' ); ?></option>
     </select>
 
-    <select name="harvest_season" id="harvest_season">        
+    <select class="badge badge-info" name="harvest_season" id="harvest_season">        
         <option value=""><?php _e( 'Saison de récolte', 'textdomain' ); ?></option>
         <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
         <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
@@ -99,7 +99,7 @@
 
 
 
-    <input type="submit" id="searchsubmit" value="Search" />
+    <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" />
 
 </form>
 
