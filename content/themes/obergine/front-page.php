@@ -8,15 +8,15 @@
 
 $banner_query = new WP_Query([
     'post_type'      => Custom_Post_Type_Banner::POST_TYPE,
-    'post_per_page'  => 1,
+    'posts_per_page'  => 1,
     'orderby'        => 'date',
     'order'          => 'DESC'
 ]);
 if ( $banner_query->have_posts() ) :
     $banner_query->the_post();
     get_template_part(
-        'template-part/content/banner-home',
-        'home'
+        'template-part/content/banner',
+       'home'
     );
     endif;
     wp_reset_postdata();
@@ -24,9 +24,12 @@ if ( $banner_query->have_posts() ) :
 
 
 <?php 
+
+$posts_count = get_theme_mod( 'obergine_theme_homepage_posts_count', 6 );
+
 $last_post_query = new WP_Query([
     'post_type'         => 'post',
-    'posts_per_page'    => 1, // @TODO: $count
+    'posts_per_page'    => $posts_count,
     'orderby'           => 'date',
     'order'             => 'DESC',
 ]);
