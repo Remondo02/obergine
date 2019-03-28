@@ -28,7 +28,7 @@ if ( have_posts() ) :
         </div>
 
         <div class="main__container__main-head__image">
-            <img class="main__container__main-head__image__img img-highlighting-post-page" src="images/carottes.jpg" alt="">
+            <?php the_post_thumbnail( 'post-thumbnail', [ 'class' => 'main__container__main-head__image__img img-highlighting-post-page' ] ); ?>
         </div>
 
         <div class="main__container__main-head__top__bot">
@@ -68,6 +68,8 @@ if ( have_posts() ) :
                     <?php the_field('mois_de_recolte'); ?>
                 </div>
             </div>
+
+            
         </div>
 
         <div class="main__container__main-container__bot">
@@ -76,7 +78,7 @@ if ( have_posts() ) :
                 <span class="main__container__main-container__bot__content__span"></span>
                 <div class="main__container__main-container__bot__content__text">
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    <div>
+                    <div class="mb-2">
                         <?php the_field('espacement_des_pieds'); ?>
 
                     </div>
@@ -89,7 +91,10 @@ if ( have_posts() ) :
                 <span class="main__container__main-container__bot__content__span"></span>
                 <div class="main__container__main-container__bot__content__text">
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="main__container__main-container__bot__content__text__wording"><?php the_field('difficulte'); ?></p>
+                    <div class="mb-2">
+
+                        <?php the_field('difficulte'); ?>
+                    </div>
                 </div>
             </div>
 
@@ -98,67 +103,51 @@ if ( have_posts() ) :
                 <span class="main__container__main-container__bot__content__span"></span>
                 <div class="main__container__main-container__bot__content__text">
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="main__container__main-container__bot__content__text__wording"><?php the_field('type'); ?></p>
+                    <div class="mb-2">
+                        <?php the_field('type'); ?>
+                    </div>
                 </div>
             </div>
 
-            <div class="main__container__main-container__bot__content">
-                <h3 class="main__container__main-container__bot__content__title">Type</h3>
-                <span class="main__container__main-container__bot__content__span"></span>
-                <div class="main__container__main-container__bot__content__text">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <p class="main__container__main-container__bot__content__text__wording"><?php the_field('type'); ?></p>
-                </div>
-            </div>
-           
         </div>
     </div>
 
     <div class="main__container__article">
-    <h4 class="main__container__article__title">Articles associes</h4>
+        <h4 class="main__container__article__title">Articles associes</h4>
 
-        <div class="main__container__article__container">
+        <div class="main__container__article__container mb-5">
 
-            
-            <div class="main__container__article__container__content">
-                <div class="main__container__article__container__content__image">
-                    <img src="images/tomates.jpeg" alt="" class="main__container__article__container__content__img">
-                </div>
-                <a href="#" class="main__container__article__container__content__text">Tomates</a>
-            </div>
-            
-            <div class="main__container__article__container__content">
-                <div class="main__container__article__container__content__image">
-                    <img src="images/tomates.jpeg" alt="" class="main__container__article__container__content__img">
-                </div>
-                <a href="#" class="main__container__article__container__content__text">Tomates</a>
-            </div>
-            
-            <div class="main__container__article__container__content">
-                <div class="main__container__article__container__content__image">
-                    <img src="images/tomates.jpeg" alt="" class="main__container__article__container__content__img">
-                </div>
-                <a href="#" class="main__container__article__container__content__text">Tomates</a>
-            </div>
+            <?php
+                $last_post_query = new WP_Query([
+                'post_type'         => Custom_Post_Type_Plant::POST_TYPE,
+                'posts_per_page'    => 4,
+                'orderby'           => 'date',
+                'order'             => 'DESC',
+                //'post__in'          => $id,
+            ]);
 
-            <div class="main__container__article__container__content">
-                <div class="main__container__article__container__content__image">
-                    <img src="images/tomates.jpeg" alt="" class="main__container__article__container__content__img">
-                </div>
-                <a href="#" class="main__container__article__container__content__text">Tomates</a>
-            </div>
 
-            <div class="main__container__article__container__content">
-                <div class="main__container__article__container__content__image">
-                    <img src="images/tomates.jpeg" alt="" class="main__container__article__container__content__img">
-                </div>
-                <a href="#" class="main__container__article__container__content__text">Tomates</a>
-            </div>
-            
+            if ( $last_post_query->have_posts() ) :
+                
+                while ( $last_post_query->have_posts() ) :        
+                    $last_post_query->the_post();
+                    
+                    get_template_part(
+                        'template-part/content/articles',
+                        'list'
+                    );
+                    
+                    
+                endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
         </div>
     </div>
 
-    </div>
+</div>
+
+    
 </main>
 
 

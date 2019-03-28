@@ -28,7 +28,7 @@ $last_post_query = new WP_Query([
 
 
 if ( $last_post_query->have_posts() ) :
-    
+                
     while ( $last_post_query->have_posts() ) :        
         $last_post_query->the_post();
         
@@ -36,11 +36,12 @@ if ( $last_post_query->have_posts() ) :
             'template-part/content/plantes',
             'list'
         );
-           
+        
         
     endwhile;
 endif;
 wp_reset_postdata();
+
 
 
 get_footer();
