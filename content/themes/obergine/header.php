@@ -52,9 +52,10 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline my-2 my-lg-0">                
+                <form class="form-inline my-2 my-lg-0" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">                
+                    <input type="hidden" name="search" value="advanced">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="searchsubmit" value="Search" type="submit">Search</button>
                 </form>
                 </div>
             </nav>
@@ -63,9 +64,12 @@
 
     <div class="header__header-bot mobile-hide">
         <div class="header__header-bot__search-bar">
-            <form class="header__header-bot__search-bar__form">
-                <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" >
-                
+            <form class="header__header-bot__search-bar__form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <input type="hidden" name="search" value="advanced">
+            <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="Rechercher" name="s" id="name" />
+                <!-- <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" > -->
+                <!-- <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" /> -->
+
             </form>
         </div>
 
