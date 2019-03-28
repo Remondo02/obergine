@@ -1,4 +1,4 @@
-<div <?php post_class( 'home-page__group' ); ?>>
+
 
     <div class="home-page__post">
         
@@ -28,3 +28,6 @@
             </div>
         </div>
     </div>
+
+    
+</div>

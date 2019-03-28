@@ -121,7 +121,7 @@ if ( have_posts() ) :
                 $last_post_query = new WP_Query([
                 'post_type'         => Custom_Post_Type_Plant::POST_TYPE,
                 'posts_per_page'    => 4,
-                'orderby'           => 'date',
+                'orderby'           => 'rand',
                 'order'             => 'DESC',
                 //'post__in'          => $id,
             ]);
