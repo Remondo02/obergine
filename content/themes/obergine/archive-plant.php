@@ -2,9 +2,8 @@
 get_header();
 
 // Template : Plantes potagères
-get_template_part( 'template-part/searchform-advanced' );
 
-echo('Template page plantes');
+get_template_part( 'template-part/searchform-advanced' );
 
 $the_query = new WP_Query( $meta_query );
 
