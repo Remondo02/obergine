@@ -17,7 +17,8 @@
     },
     "require-dev": {
         "wpackagist-plugin/what-the-file": "1.5.4",
-        "wpackagist-plugin/query-monitor":"3.3.2"
+        "wpackagist-plugin/query-monitor":"3.3.2",
+        "wpackagist-plugin/simply-show-hooks":"1.2.1"
         
     },
     "extra": {
