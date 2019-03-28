@@ -24,10 +24,7 @@
             </div>
             
             <div class="home-page__post__main__link">
-                <a href="<?php get_post_permalink(); ?>" class="home-page__post__main__link__read-more">Lire la suite <i class="fa fa-envira" aria-hidden="true"></i></a>
+                <a href="<?php the_permalink(); ?>" class="home-page__post__main__link__read-more">Lire la suite <i class="fa fa-envira" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
-
-    
-
