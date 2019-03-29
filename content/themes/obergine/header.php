@@ -13,14 +13,21 @@
     <div class="header__header-up">
 
         <div class="header__header-up__social-links">
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-facebook-f"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-instagram"></i></a>
+            
+            <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
+           
         
         </div>
+
+        <?php
+        // Dynamic-title
+        require get_theme_file_path('inc/dynamic-title.php');
+
+        ?>
+
         
         <div class="header__header-up__head">
-        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1></a>
+        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
         
         <div class="header__header-up__log">

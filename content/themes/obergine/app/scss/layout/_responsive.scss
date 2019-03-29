@@ -192,7 +192,33 @@
         margin-bottom: $gutter-large;
     }
     
-    
+    // Social Menu
+
+    body {
+
+        
+        .menu-social-links-container {
+            ul {
+
+                li {
+
+                    font-size: 1.5em;
+                    
+                    a {
+                        color: $color-primary;
+                        width: 5rem;
+                        
+                        
+                        :hover {
+                            color: $color-title-primary;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
 
       
 }

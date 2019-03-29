@@ -1,4 +1,4 @@
-
+<div <?php post_class( 'home-page__group' ); ?>>
 
     <div class="home-page__post">
         
@@ -6,7 +6,7 @@
             
             <div class="home-page__post__head__image">
             <?php the_post_thumbnail( 'post-thumbnail', [ 'class' => 'home-page__post__head__image__img' ] ); ?>    
-            <!-- <img src="images/carottes.jpg" alt="" class="home-page__post__head__image__img"> -->
+            
             </div>
             
             <div class="home-page__post__head__content">
@@ -28,6 +28,4 @@
             </div>
         </div>
     </div>
-
-    
 </div>

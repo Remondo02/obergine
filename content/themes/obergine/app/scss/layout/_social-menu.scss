@@ -1,0 +1,23 @@
+// Dynamique menu "Social links"
+
+.menu-social-links-container {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        
+        a {
+            color: $color-secondary;;
+            width: 5rem;
+            //display: flex;
+            //justify-content: space-around;
+
+            :hover {
+                color: $color-title-primary;
+            }
+        }
+    }
+}
+
+.widget_nav_menu {
+    list-style-type: none;
+}
