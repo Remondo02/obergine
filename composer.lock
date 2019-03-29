@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "400b550718d8fdd0ca8698c7023bb5b9",
+    "content-hash": "05b96443edcf8070bc37d8175219d9fd",
     "packages": [
         {
             "name": "composer/installers",
@@ -256,31 +256,26 @@
         },
         {
             "name": "woocommerce/woocommerce",
-            "version": "3.5.7",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/woocommerce/woocommerce.git",
-                "reference": "039915faccd2e56cdf9f097b14e79d5a5f468906"
+                "reference": "c0375de6bfa2964307322191dbe0d961a0687b2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/woocommerce/woocommerce/zipball/039915faccd2e56cdf9f097b14e79d5a5f468906",
-                "reference": "039915faccd2e56cdf9f097b14e79d5a5f468906",
+                "url": "https://api.github.com/repos/woocommerce/woocommerce/zipball/c0375de6bfa2964307322191dbe0d961a0687b2e",
+                "reference": "c0375de6bfa2964307322191dbe0d961a0687b2e",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.2"
+                "composer/installers": "1.6.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-                "nette/utils": "~2.3.0",
-                "phpunit/phpunit": "6.*",
-                "squizlabs/php_codesniffer": "*",
-                "wimg/php-compatibility": "^8.0",
-                "woocommerce/woocommerce-git-hooks": "*",
-                "woocommerce/woocommerce-sniffs": "*",
-                "wp-coding-standards/wpcs": "^0.14"
+                "apigen/apigen": "4.1.2",
+                "nette/utils": "2.5.3",
+                "phpunit/phpunit": "6.5.14",
+                "woocommerce/woocommerce-sniffs": "0.0.6"
             },
             "type": "wordpress-plugin",
             "extra": {
@@ -296,7 +291,7 @@
             ],
             "description": "An eCommerce toolkit that helps you sell anything. Beautifully.",
             "homepage": "https://woocommerce.com/",
-            "time": "2019-03-19T17:35:33+00:00"
+            "time": "2019-03-28T19:41:51+00:00"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
@@ -459,6 +454,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/what-the-file/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-menu-extension",
+            "version": "1.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-menu-extension/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-extension.zip?timestamp=1553089904",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-menu-extension/"
         }
     ],
     "aliases": [],
