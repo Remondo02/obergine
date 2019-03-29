@@ -50,3 +50,7 @@ function obergine_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'obergine_add_woocommerce_support' );
+
+
+
+
