@@ -30,10 +30,18 @@
         }
         
         &__head {
+
+           
+            :hover {
+                text-decoration: none;
+            }
+            
             &__title {
                 color: $color-title-primary;
                 font-size: 1.5em;
                 padding-left: 1.2em;
+
+                
 
                 &__span {
                     color: white;
