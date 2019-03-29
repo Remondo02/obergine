@@ -9,7 +9,7 @@ get_header();
         
         <?php
 
-        echo do_shortcode( '[products columns="3" class="test"]' ); 
+        echo do_shortcode( '[products columns="3"]' ); 
 
         ?>
 
