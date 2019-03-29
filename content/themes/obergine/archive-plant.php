@@ -5,6 +5,7 @@ get_header();
 
 get_template_part( 'template-part/searchform-advanced' );
 
+
 $the_query = new WP_Query( $meta_query );
 
 if ( $the_query->have_posts() ) :

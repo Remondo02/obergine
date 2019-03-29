@@ -1,6 +1,7 @@
 <?php
 get_header();
 
+
 if ( have_posts() ) :
     
     the_post();
@@ -20,6 +21,10 @@ if ( have_posts() ) :
                 <!-- <button class="main__container__main-head__top__header__button__fav">Ajouter en favoris <i class="main__container__main-head__top__header__fav__icone fa fa-thumbs-up" aria-hidden="true"></i></button> -->
 
                 <?php the_favorites_button();
+
+                // $usermeta = get_user_meta(get_current_user_id());
+                // echo '<pre>';
+                // var_dump($usermeta);
                 ?>
                 <button class="main__container__main-head__top__header__button__buy">Acheter des graines <i class="main__container__main-head__top__header__buy__icone fa fa-shopping-cart" aria-hidden="true"></i></button>
             
