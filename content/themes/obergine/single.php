@@ -2,6 +2,10 @@
 get_header();
 
 // Template : article-single
+?>
+
+<main class="mainmr-5 ml-5  mt-5 mb-5">
+<?php
 
 if ( have_posts() ) :
 
@@ -9,9 +13,9 @@ if ( have_posts() ) :
 
 
         the_post_thumbnail( 'post-thumbnail', [ 'class' => 'home-pagepostheadimageimg' ] ); ?>
-
-
-         <div class="home-pagepostmain">
+    
+    
+         <div class="home-page post-main">
             <h1> <?php the_title(); ?></h1>
             <p> écrit par <?php the_author(); ?> le <?php the_date(); ?> </p>
             <div class="home-pagepostmaincontent">
@@ -20,13 +24,13 @@ if ( have_posts() ) :
 
             </div>
         </div>
-
-<?php
+        <?php
 
 endif;
 wp_reset_postdata();
 
-
-
+?>
+</main>
+<?php
 
 get_footer();
