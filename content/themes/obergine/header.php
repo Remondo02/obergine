@@ -18,9 +18,36 @@
            
         
         </div>
+
+        
+
+        <?php
+
+        // Dynamisation du titre.
+        
+
+        $get_title = get_bloginfo();
+        $get_title_array = str_split($get_title );
+        
+        $i = 0;
+        $title1 = [];
+        $title2 = [];
+        
+        foreach ($get_title_array as $key => $value) {
+            if( $i == 0 ) {
+                $i++;
+                $title1[] = $value;
+            } else {
+                $title2[] = $value;
+            }
+        }
+        $part1 = implode($title1);
+        $part2 = implode($title2);
+
+        ?>
         
         <div class="header__header-up__head">
-        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1></a>
+        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
         
         <div class="header__header-up__log">
