@@ -1,4 +1,7 @@
 @media (min-width: 300px) {
+
+    
+    
     hr {
         display: none;
     }
@@ -22,9 +25,15 @@
             border-bottom: none;
         }
 
-        
-
     }
+
+    // searchform-advanced
+
+    .search-container {
+        
+        margin-bottom: 0.8em;
+    }
+    
 
     
             
@@ -36,6 +45,8 @@
     body { 
         background: rgba(250, 250, 250, 0.993);
     }
+
+    
 
     .header {
 
@@ -220,6 +231,25 @@
         
     }
 
+    // searchform-advanced
+
+    .articles-list-page__filters__filters-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .search-container {
+        display: flex;
+        margin-bottom: 0.8em;
+    }
+
+    #name {
+        margin-right: 1em;
+    }
+
+    
+
       
 }
 
@@ -296,3 +326,4 @@
 
     
 }
+

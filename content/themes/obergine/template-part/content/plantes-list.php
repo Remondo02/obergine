@@ -1,4 +1,6 @@
-<main class="main articles-list-page">
+<!-- <main class="main articles-list-page"> -->
+
+    
 
 <!-- <section class="articles-list-page__filters">
     <div class="articles-list-page__filters__filters-list">
@@ -21,7 +23,7 @@
 
 </section>  -->
 
-<section class="articles-list-page__main">
+<!-- <section class="articles-list-page__main"> -->
 
     
     <div class="home-page__group">
@@ -55,13 +57,14 @@
                     <a href="<?php the_permalink(); ?>" class="home-page__post__main__link__read-more">Lire la suite <i class="fa fa-envira" aria-hidden="true"></i></a>
                 </div>
             </div>
+        </div>
         
     </div>
-</section>
+<!-- </section> -->
     
     
     
     
     
     
-</main>
+<!-- </main> -->
