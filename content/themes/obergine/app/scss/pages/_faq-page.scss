@@ -1,0 +1,32 @@
+.faq-page {
+
+    &__container {
+        margin: $gutter $gutter-smale;
+
+        &__title {
+            border-bottom: 1px solid $color-border-primary;
+            margin-right: 5em;
+            margin-bottom: $gutter-smale / 3;
+            padding-bottom: $gutter-smale / 4;
+            
+        }
+
+        &__question {
+
+            margin-bottom: $gutter-smale;
+
+            i {
+                color: $color-border-primary;
+            }
+            
+            &__ask {
+                font-size: 1.2em;
+                margin-bottom: $gutter-smale / 4;
+            }
+
+            &__answer {
+                margin: auto 1.2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+
+.articles-list-page__filters__filters-list__title {
+    font-weight: 600;
+    margin-top: $gutter-smale / 2;
+    margin-left: $gutter-smale;
+    margin-bottom: $gutter-smale / 2;
+    padding-bottom: $gutter-smale / 4;
+
+    border-bottom: 1px solid $color-border-primary;
+}
+
+.articles-list-page__filters__filters-list__list {
+    margin-bottom: $gutter-large;
+}
+
+.fiters-page {
+    min-height: 40em;
+}

@@ -1,0 +1,105 @@
+.home-page {
+
+   
+
+    &__post {
+       
+        
+
+        
+
+        margin-bottom: $gutter-smale;
+        padding-bottom: $gutter-smale;
+        border-bottom: 1px solid $color-border-primary;
+        // margin-left: $gutter-smale;
+        // margin-right: $gutter-smale;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &__head {
+
+            
+            display: flex;
+            margin-bottom: $gutter-smale / 2;
+            
+            &__image {
+                max-width: 45%;
+                //padding-left: $gutter-smale;
+                
+                
+                &__img {
+                    padding-top: $gutter-smale;
+                    padding-left: $gutter-smale;
+                    max-width: 100%;
+                }
+            }
+            
+            &__content {
+                max-width: 100%;
+                padding-left: $gutter-smale;
+                padding-right: $gutter-smale / 2;
+                padding-top: $gutter-smale;
+                
+                &__head {
+                    &__title {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                    }
+                    
+                    &__author {
+                        font-size: 1em;
+                        color: grey;
+                    }
+                    
+                    &__date {
+                        font-size: 0.8em;
+                        color: grey;
+                    }
+                }
+            }
+
+            
+        }
+
+            
+
+            &__main {
+
+                padding-left: $gutter-smale;
+                padding-right: $gutter-smale / 2;
+
+                &__content {
+                    
+                    &__text {
+                        
+                    }
+                    
+                    
+                }
+
+                &__link {
+                    :hover {
+                        background-color: $color-title-primary;
+                        color: white;
+                        text-decoration: none;
+                        border-radius: 10px;
+                    }
+                    
+                    &__read-more {
+                        border: 1px solid $color-title-primary;
+                        padding: 0.5em;
+                        
+                        
+                    }
+                    
+                }
+            }
+                
+            
+                            
+                
+            
+    }
+}

@@ -1,0 +1,263 @@
+@media (min-width: 300px) {
+     
+    .header {
+
+        .mobile-hide {
+            display: none;
+        }
+    }
+
+    // Home page
+
+    .home-page__group {
+
+        border-bottom: 1px solid $color-border-primary;
+        margin-left: $gutter-smale;
+        margin-right: $gutter-smale;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+    }
+
+    
+            
+     
+
+  }
+
+  @media (min-width: 768px) {
+    body { 
+        background: rgba(250, 250, 250, 0.993);
+    }
+
+    .header {
+
+        background-color: white;
+        padding-top: $gutter-smale / 2;
+        padding-bottom: $gutter-smale / 2;
+
+        &__header-up {
+
+            color: $color-primary;
+            
+            &__nav {
+                display: none;
+            }
+            
+            &__head {
+                
+                &__title {
+                    padding-left: initial;
+
+                    &__span {
+                        color: $color-primary;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &__social-links {
+
+                :hover {
+                    color: $color-teritary;
+                }
+
+                &__link {
+
+                    font-size: 1.5em;
+                    padding-right: 1em;
+                    color: $color-primary;
+
+                    &:last-child {
+                        
+                        padding: inherit;
+                        
+                        
+                    }
+                    
+                }
+                    
+
+            }
+
+            &__log {
+
+                &__link {
+
+                    color: $color-primary;
+
+                    :hover {
+                        color: $color-teritary;
+                    }
+                    
+                    i {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+
+        .mobile-hide {
+            display: flex;
+        }
+    }
+
+    
+
+    // article page
+
+    .main {
+
+        &__container {
+            margin-left: $gutter-smale;
+            margin-right: $gutter-smale;
+        }
+    }
+
+    // Banner
+    .main {
+
+        .banner {
+            &__container {
+                left: 30%;
+            }
+        }
+        
+    }
+
+    // articles-list-page
+
+    .articles-list-page {
+        display: flex;
+
+        &__main {
+            max-width: 65%;
+
+           
+        }
+
+        &__filters {
+
+            
+
+            margin-top: $gutter;
+
+            //border-right: 1px solid $color-border-primary;
+            
+            &__filters-list {
+
+                //position: fixed;
+
+                
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+
+                    &__item {
+
+                        &__link {
+
+                            &:hover {
+                                background-color: $color-background-primary;
+                                // text-decoration: none;
+                                // border: 1px solid blue;
+                                
+                            }
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+
+    // Filter-page 
+        
+    .articles-list-page__filters {
+        
+        margin-top: $gutter-smale / 4;
+        margin-left: $gutter-smale;
+        margin-bottom: $gutter-smale / 2;
+    }
+    
+    .articles-list-page__filters__filters-list__list {
+        margin-bottom: $gutter-large;
+    }
+    
+    
+
+      
+}
+
+@media (min-width: 992px) {
+
+    .main {
+
+        &__container {
+            margin-left: $gutter;
+            margin-right: $gutter;
+        }
+    }
+
+    // home page
+
+    .main {
+
+        
+        .home-page__post {
+            
+            border-bottom: none;
+            // border-right: 1px solid $color-border-primary;
+            // margin-bottom: 2em;
+            // margin-top: 2em;
+            
+        }
+    }
+
+    .home-page__group {
+
+        display: flex;
+
+
+    }
+
+    // Banner
+    .main {
+
+        .banner {
+            &__container {
+                left: 30%;
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .main {
+
+        &__container {
+            margin-left: $gutter-large;
+            margin-right: $gutter-large;
+        }
+
+    }
+
+    // Banner
+    .main {
+
+        .banner {
+            &__container {
+                left: 40%;
+            }
+        }
+        
+    }
+            
+
+    
+}

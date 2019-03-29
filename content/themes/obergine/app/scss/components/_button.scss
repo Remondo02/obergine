@@ -1,0 +1,10 @@
+.back-home-link {
+    padding: 0.5em;
+
+    &:hover {
+        
+        border: 1px solid #0F9AFC;
+        color: #0F9AFC;
+        text-decoration-line: none;
+    }
+}
