@@ -15,9 +15,7 @@
         <div class="header__header-up__social-links">
             
             <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
-            <!-- <a class="header__header-up__social-links__link" href="#"><i class="fa fa-facebook-f"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-instagram"></i></a> -->
+           
         
         </div>
         
