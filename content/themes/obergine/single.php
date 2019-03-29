@@ -4,7 +4,7 @@ get_header();
 // Template : article-single
 ?>
 
-<main class="mainmr-5 ml-5  mt-5 mb-5">
+<main class="main mr-5 ml-5  mt-5 mb-5">
 <?php
 
 if ( have_posts() ) :
