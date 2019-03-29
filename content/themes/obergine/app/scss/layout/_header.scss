@@ -12,6 +12,8 @@
         color: $color-secondary;
         
         &__social-links {
+            width: 10em;
+
 
             &__link {
                 color: $color-secondary;
@@ -119,4 +121,5 @@
         }
     }
 }
+
 
