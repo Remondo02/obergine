@@ -10,7 +10,7 @@ require get_theme_file_path('inc/customizer.php');
 require get_theme_file_path('inc/search-query.php');
 require get_theme_file_path('inc/widget.php');
 require get_theme_file_path('inc/function-login.php');
-require get_theme_file_path('inc/function-login.php');
+
 
 
 
