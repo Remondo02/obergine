@@ -25,7 +25,7 @@ get_header();
 
         <div class="faq-page__container__question">
             <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i> Qui sommes nous ?</h2>
-            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Ça va un peu vite entre nous</p>
+            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Les O'bergines</p>
         </div>
     </div>
 
