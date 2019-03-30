@@ -20,12 +20,12 @@ get_header();
 
         <div class="faq-page__container__question">
             <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i> Comment obtenir un coupon de réduction ?</h2>
-            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i>Code promo : GRATUIT</p>
+            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Code promo : GRATUIT</p>
         </div>
 
         <div class="faq-page__container__question">
             <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i> Qui sommes nous ?</h2>
-            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i></p>
+            <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Ça va un peu vite entre nous</p>
         </div>
     </div>
 
