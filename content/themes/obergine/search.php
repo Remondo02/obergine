@@ -7,8 +7,6 @@ get_header();
 
 get_template_part( 'template-part/searchform-advanced' );
 
-
-
 if ( have_posts() ) :
     while ( have_posts() ):
         the_post();
