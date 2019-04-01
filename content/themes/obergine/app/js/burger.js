@@ -11,6 +11,9 @@ var app = {
 
     displayOverlay: function(){
       var elementClicked = event.target;
+      if (elementClicked.nodeName === 'BUTTON'){
+        elementClicked = elementClicked.firstElementChild;
+      }
       console.log(elementClicked);
 
       app.bars = document.querySelector('.fa-bars').parentElement;
