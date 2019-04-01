@@ -31,7 +31,8 @@
         </div>
         
         <div class="header__header-up__log">
-            <a class="header__header-up__log__link" href="#"><i class="fa fa-user"></i></a>
+            <a class="header__header-up__log__link" href="<?php echo home_url() . '/mon-compte'; ?>
+            "><i class="fa fa-user"></i></a>
         </div>
         
         <!-- Navigation menu burger -->
