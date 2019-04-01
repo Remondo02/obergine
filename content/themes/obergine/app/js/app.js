@@ -2,7 +2,7 @@ require('bootstrap');
 
 var app = {
   init: function() {
-    console.log('init');
+    console.log('init app');
 
     app.homeUrl = 'http://localhost/html/apotheose/potager-party/';
 

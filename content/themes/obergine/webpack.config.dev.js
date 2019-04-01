@@ -22,9 +22,9 @@ const watchMode = process.env.NODE_ENV === 'watch';
 let config = {
   entry: {
     app: './app/js/app.js',
+    burger: './app/js/burger.js',
     rellax: './app/js/rellax.js',
-    menu: './app/js/burger-menu.js',
-    scss: './app/scss/main.scss',
+    main: './app/scss/main.scss'
   },
   mode: 'development',
   output: {

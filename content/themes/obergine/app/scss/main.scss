@@ -23,7 +23,8 @@ $fa-font-path: '~font-awesome/fonts';
         'layout/footer';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button',
+        'components/overlaymenu';
 
 // 6. Pages
 @import 'pages/home',

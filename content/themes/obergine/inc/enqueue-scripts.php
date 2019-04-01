@@ -15,7 +15,7 @@ function obergine_enqueue_scripts()
     );
     wp_enqueue_script(
         'obergine-script-burger-menu',
-        get_theme_file_uri( 'public/js/burger-menu.js' ),
+        get_theme_file_uri( 'public/js/burger.js' ),
         [],
         false,
         true
