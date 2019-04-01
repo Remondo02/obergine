@@ -2,6 +2,7 @@
 get_header();
 
 // Template : Plantes potagères
+
 ?>
 <main class="main articles-list-page">
     <?php
@@ -55,6 +56,7 @@ get_header();
     </section>
 </main>
 <?php
+
 
 get_footer();
 ?>

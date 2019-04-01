@@ -1,6 +1,7 @@
 <?php
 get_header();
 
+
 // Template : article-single
 ?>
 
@@ -26,11 +27,14 @@ if ( have_posts() ) :
         </div>
         <?php
 
+
 endif;
 wp_reset_postdata();
+
 
 ?>
 </main>
 <?php
 
 get_footer();
+
