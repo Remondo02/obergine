@@ -7,10 +7,14 @@
             display: none;
         }
     }
-    
+    .footer {
+        display: flex;
+        
+        flex-direction: column-reverse;
+    }
 
     .footer__nav {
-        display: none;
+        //display: none;
     }
     
     hr {
@@ -64,6 +68,12 @@
 
         .footer__nav {
             display: initial;
+        }
+        .footer {
+
+            display: flex;
+            
+            flex-direction: initial;
         }
 
         
