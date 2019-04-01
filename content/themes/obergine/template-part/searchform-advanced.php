@@ -19,7 +19,7 @@
 
 <!-- Type -->
 
-    <select class="badge badge-light" name="type" id="type">
+    <select class="badge badge-light" name="type" id="type" onchange="this.form.submit()">
 
         <option value="">Type</option>
                 <?php $field = get_field_object('type'); 
@@ -33,7 +33,7 @@
     
     <!-- Famille -->
     
-    <select class="badge badge-success" name="family" id="family">
+    <select class="badge badge-success" name="family" id="family" onchange="this.form.submit()">
 
         <option value="">Famille</option>
                 <?php $field = get_field_object('famille'); 
@@ -48,7 +48,7 @@
 
 <!-- Eau -->
 
-<select class="badge badge-primary" name="type" id="type">
+<select class="badge badge-primary" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Besoin en Eau</option>
         <?php $field = get_field_object('besoin_en_eau'); 
@@ -63,7 +63,7 @@
 
 <!-- Emplacement -->
 
-<select class="badge badge-secondary" name="type" id="type">
+<select class="badge badge-secondary" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Emplacement</option>
         <?php $field = get_field_object('emplacement'); 
@@ -79,7 +79,7 @@
 
 <!-- Difficulté -->
 
-<select class="badge badge-danger" name="type" id="type">
+<select class="badge badge-danger" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Difficulté</option>
         <?php $field = get_field_object('difficulte'); 
@@ -93,7 +93,7 @@
 
 <!-- Espacement -->
 
-<select class="badge badge-warning" name="type" id="type">
+<select class="badge badge-warning" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Espacement</option>
         <?php $field = get_field_object('espacement_des_pieds'); 
@@ -106,7 +106,7 @@
 
 <!-- Saison de semi-->
 
-<select class="badge badge-info" name="type" id="type">
+<select class="badge badge-info" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Saison de semis</option>
         <?php $field = get_field_object('saison_de_semis'); 
@@ -120,7 +120,7 @@
 
 <!-- Saison de récolte-->
 
-<select class="badge badge-info" name="type" id="type">
+<select class="badge badge-info" name="type" id="type" onchange="this.form.submit()">
 
 <option value="">Saison de récolte</option>
         <?php $field = get_field_object('saison_de_recolte'); 
