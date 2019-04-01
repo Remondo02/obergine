@@ -29,10 +29,11 @@
         <div class="header__header-up__head">
         <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
-        
+
+
         <div class="header__header-up__log">
-            <a class="header__header-up__log__link" href="<?php echo home_url() . '/mon-compte'; ?>
-            "><i class="fa fa-user"></i></a>
+            <a class="header__header-up__log__link" href="<?php echo home_url() . '/panier'; ?>"><i class="fa fa-shopping-basket"></i></a>
+            <a class="header__header-up__log__link" href="<?php echo home_url() . '/mon-compte'; ?>"><i class="fa fa-user"></i></a>
         </div>
         
         <!-- Navigation menu burger -->
