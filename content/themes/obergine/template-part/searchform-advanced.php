@@ -1,12 +1,21 @@
-<form class="pr-3 pl-3" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form class="pr-3 pl-3 articles-list-page__filters__filters-list" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-    
 
-    <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
-    <input type="hidden" name="search" value="advanced">
 
-    <label for="s" class=""><?php _e( 'Recherche: ', 'textdomain' ); ?></label><br>
-    <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
+
+
+       <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
+       <input type="hidden" name="search" value="advanced">
+
+
+
+               <label for="s" class=""><?php _e( 'Recherche: ', 'textdomain' ); ?></label><br>
+               <div class="search-container">
+               <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
+
+               <input class="search-button border-0 bg-muted rounded text-dark" type="submit" id="searchsubmit" value="Search" />
+
+           </div>
 
 <!-- Type -->
 
@@ -66,6 +75,7 @@
     
 </select>
 
+    
 
 <!-- Difficulté -->
 
@@ -120,9 +130,6 @@
                 <?php endforeach; ?>
         <?php endif; ?>
 </select>
-
-
-
 
 
     <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" />
