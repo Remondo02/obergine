@@ -21,13 +21,17 @@ function woocom_validate_extra_register_fields( $username, $email, $validation_e
 
 if (isset($_POST['billing_first_name']) && empty($_POST['billing_first_name']) ) {
 
-    $validation_errors->add('billing_first_name_error' ('Prenom requis', 'woocommerce'));
+
+$validation_errors->add('billing_first_name_error', __('Prenom requis', 'woocommerce'));
+
 
 }
 
 if (isset($_POST['billing_last_name']) && empty($_POST['billing_last_name']) ) {
 
-$validation_errors->add('billing_last_name_error' ('Nom requis', 'woocommerce'));
+
+$validation_errors->add('billing_last_name_error', __('Nom requis', 'woocommerce'));
+
 
 }
 
@@ -41,18 +45,22 @@ add_action('woocommerce_register_post', 'woocom_validate_extra_register_fields',
 
 function woocom_save_extra_register_fields($customer_id) {
 
-    if (isset($_POST[‘billing_first_name’])) {
 
+    if (isset($_POST['billing_first_name'])) {
+    
     update_user_meta($customer_id, 'billing_first_name', sanitize_text_field($_POST['billing_first_name']));
-
+    
     }
-
-    if (isset($_POST[‘billing_last_name’])) {
-
+    
+    if (isset($_POST['billing_last_name'])) {
+    
     update_user_meta($customer_id, 'billing_last_name', sanitize_text_field($_POST['billing_last_name']));
+    
 
     }
 
     }
 
+    
     add_action('woocommerce_created_customer', 'woocom_save_extra_register_fields');
+
