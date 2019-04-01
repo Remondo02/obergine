@@ -18,7 +18,7 @@
         
         &__list {
             // responsive tablette
-            //display: flex;
+            
             justify-content: space-between;
             
             &__item {
@@ -34,8 +34,12 @@
         min-width: 20%;
         display: flex;
 
-        // responsive mobile.
-        display: none;
+        i {
+
+            color: $color-secondary;
+        }
+
+        
 
        
 
