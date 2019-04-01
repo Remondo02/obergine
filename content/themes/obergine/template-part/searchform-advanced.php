@@ -132,7 +132,7 @@
 </select>
 
 
-    <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" />
+    
 
 </form>
 
