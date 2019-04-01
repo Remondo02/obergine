@@ -1,6 +1,8 @@
 @media (min-width: 300px) {
 
-    
+    .footer__nav {
+        display: none;
+    }
     
     hr {
         display: none;
@@ -44,6 +46,10 @@
   @media (min-width: 768px) {
     body { 
         background: rgba(250, 250, 250, 0.993);
+
+        .footer__nav {
+            display: initial;
+        }
     }
 
     
