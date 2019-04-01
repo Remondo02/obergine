@@ -20,6 +20,7 @@
             // responsive tablette
             //display: flex;
             justify-content: space-between;
+            
             &__item {
                 &__link {
                     color: $color-secondary;
@@ -55,5 +56,19 @@
 
 
         }
+    }
+}
+
+// Liste des liens du menu de navigation généré par Wordpress
+
+#menu-footer-nav-menu {
+
+    li {
+
+        a {
+            color: $color-secondary;
+
+        }
+
     }
 }

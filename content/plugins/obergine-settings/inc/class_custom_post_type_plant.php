@@ -29,10 +29,11 @@ class Custom_Post_Type_Plant
                     'all_items'          => 'Toutes les plantes potagères',
                     'archives'           => 'Archives des plantes potagères'
                 ],
-                'public' => true, // permet de configurer les options exclude_from_search, publicly_queryable, show_ui, show_in_nav_menus
+
+                 'public' => true, // permet de configurer les options exclude_from_search, publicly_queryable, show_ui, show_in_nav_menus
                 'exclude_from_search' => false, // Exclure ou non le post type des résultats de la recherche côté front-office
                 'publicly_queryable'  => true, // Permet d'accéder ou non à nos contenus de ce post type à partir d'URL : ?post_type={post_type_key}, ?{post_type_key}={single_post_slug}, ?{post_type_query_var}={single_post_slug}
-                'show_ui'            => true, // Afficher ou non notre post type dans le backoffice
+                'show_ui'             => true, // Afficher ou non notre post type dans le backoffice
                 'show_in_nav_menus'   => true, // Afficher ou non le post type dans l'interface du backoffice de gestion de menus
                 'show_in_admin_bar'   => true,
                

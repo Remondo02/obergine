@@ -1,6 +1,6 @@
 .header {
     background-color: $color-primary;
-    margin-bottom: $gutter-smale / 2;
+    //margin-bottom: $gutter-smale / 2;
 
     &__header-up {
 
@@ -12,6 +12,8 @@
         color: $color-secondary;
         
         &__social-links {
+            width: 10em;
+
 
             &__link {
                 color: $color-secondary;
@@ -28,10 +30,18 @@
         }
         
         &__head {
+
+           
+            :hover {
+                text-decoration: none;
+            }
+            
             &__title {
                 color: $color-title-primary;
                 font-size: 1.5em;
                 padding-left: 1.2em;
+
+                
 
                 &__span {
                     color: white;
@@ -101,13 +111,13 @@
                     :hover {
                         background-color: $color-primary;
                         border-radius: 10px;
-                        padding: 0.5em;
                         color: white;
                         text-decoration: none;
-                        font-weight: 600;
+                        
                     }
-
+                    
                     >a {
+                        padding: 0.5em;
                         color: black;
 
                         
@@ -119,4 +129,5 @@
         }
     }
 }
+
 

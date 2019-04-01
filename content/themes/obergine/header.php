@@ -13,14 +13,21 @@
     <div class="header__header-up">
 
         <div class="header__header-up__social-links">
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-facebook-f"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="header__header-up__social-links__link" href="#"><i class="fa fa-instagram"></i></a>
+            
+            <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
+           
         
         </div>
+
+        <?php
+        // Dynamic-title
+        require get_theme_file_path('inc/dynamic-title.php');
+
+        ?>
+
         
         <div class="header__header-up__head">
-        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span">O'</span> bergine</h1></a>
+        <a href="<?php echo home_url(); ?>"><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
         
         <div class="header__header-up__log">
@@ -52,9 +59,10 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline my-2 my-lg-0">                
+                <form class="form-inline my-2 my-lg-0" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">                
+                    <input type="hidden" name="search" value="advanced">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="searchsubmit" value="Search" type="submit">Search</button>
                 </form>
                 </div>
             </nav>
@@ -63,9 +71,12 @@
 
     <div class="header__header-bot mobile-hide">
         <div class="header__header-bot__search-bar">
-            <form class="header__header-bot__search-bar__form">
-                <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" >
-                
+            <form class="header__header-bot__search-bar__form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <input type="hidden" name="search" value="advanced">
+            <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="Rechercher" name="s" id="name" />
+                <!-- <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" > -->
+                <!-- <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" /> -->
+
             </form>
         </div>
 
