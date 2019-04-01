@@ -21,9 +21,9 @@ function advanced_search_query( $query ) {
             $array_meta_queries[] = ['key' => 'emplacement', 'value' => $_GET['place'], 'compare' => 'LIKE'];
         }
 
-        if (!empty($_GET['familly'])) {
+        if (!empty($_GET['family'])) {
 
-            $array_meta_queries[] = ['key' => 'famille', 'value' => $_GET['familly'], 'compare' => 'LIKE'];
+            $array_meta_queries[] = ['key' => 'famille', 'value' => $_GET['family'], 'compare' => 'LIKE'];
         }
 
         if (!empty($_GET['type'])) {

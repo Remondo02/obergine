@@ -1,113 +1,139 @@
+<form class="pr-3 pl-3 articles-list-page__filters__filters-list" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
 
 
-    <form class="pr-3 pl-3 articles-list-page__filters__filters-list" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-
-        
-
-        
-
-        <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
-        <input type="hidden" name="search" value="advanced">
 
 
-                
-                <label for="s" class=""><?php _e( 'Recherche: ', 'textdomain' ); ?></label><br>
-                <div class="search-container">
-                <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
-                
-                <input class="search-button border-0 bg-muted rounded text-dark" type="submit" id="searchsubmit" value="Search" />
-                
-            </div>
+       <!-- PASSING THIS TO TRIGGER THE ADVANCED SEARCH RESULT PAGE FROM functions.php -->
+       <input type="hidden" name="search" value="advanced">
 
-            <select class="badge badge-light articles-list-page__filters__filters-list__list__item" name="type" id="type">
-                
-                <option value=""><?php _e( 'Type', 'textdomain' ); ?></option>
-                <option value="Aromates"><?php _e( 'Aromates', 'textdomain' ); ?></option>
-                <option value="Fruits"><?php _e( 'Fruits', 'textdomain' ); ?></option>
-                <option value="Légumes"><?php _e( 'Légumes', 'textdomain' ); ?></option>
-                <option value="Plantes"><?php _e( 'Plantes', 'textdomain' ); ?></option>
-                
-            </select>
+
+
+               <label for="s" class=""><?php _e( 'Recherche: ', 'textdomain' ); ?></label><br>
+               <div class="search-container">
+               <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
+
+               <input class="search-button border-0 bg-muted rounded text-dark" type="submit" id="searchsubmit" value="Search" />
+
+           </div>
+
+<!-- Type -->
+
+    <select class="badge badge-light" name="type" id="type">
+
+        <option value="">Type</option>
+                <?php $field = get_field_object('type'); 
+                if( $field['choices'] ) : ?>
+                        <?php foreach( $field['choices'] as $item): ?>
+        <option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                        <?php endforeach; ?>
+                <?php endif; ?>
             
+    </select>
+    
+    <!-- Famille -->
+    
+    <select class="badge badge-success" name="family" id="family">
+
+        <option value="">Famille</option>
+                <?php $field = get_field_object('famille'); 
+                if( $field['choices'] ) : ?>
+                        <?php foreach( $field['choices'] as $item): ?>
+        <option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                        <?php endforeach; ?>
+                <?php endif; ?>
+
+    </select>
 
 
-        <select class="badge badge-success articles-list-page__filters__filters-list__list__item" name="family" id="family">
-            
-            <option value=""><?php _e( 'Famille', 'textdomain' ); ?></option>
-            <option value="Alliacées"><?php _e( 'Alliacées', 'textdomain' ); ?></option>
-            <option value="Amaryllidacées"><?php _e( 'Amaryllidacées', 'textdomain' ); ?></option>
-            <option value="Apiacées"><?php _e( 'Apiacées', 'textdomain' ); ?></option>
-            <option value="Astéracées"><?php _e( 'Astéracées', 'textdomain' ); ?></option>
-            <option value="Brassicacées"><?php _e( 'Brassicacées', 'textdomain' ); ?></option>
-            <option value="Chénopodiacées"><?php _e( 'Chénopodiacées', 'textdomain' ); ?></option>
-            <option value="Fabiacées"><?php _e( 'Fabiacées', 'textdomain' ); ?></option>
-            <option value="Labiées"><?php _e( 'Labiées', 'textdomain' ); ?></option>
-            <option value="Solanacées"><?php _e( 'Solanacées', 'textdomain' ); ?></option>
-            <option value="Autres"><?php _e( 'Autres', 'textdomain' ); ?></option>
+<!-- Eau -->
 
-        </select>
+<select class="badge badge-primary" name="type" id="type">
+
+<option value="">Besoin en Eau</option>
+        <?php $field = get_field_object('besoin_en_eau'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+    
+</select>
 
 
+<!-- Emplacement -->
 
+<select class="badge badge-secondary" name="type" id="type">
 
-        <select class="badge badge-primary articles-list-page__filters__filters-list__list__item" name="water" id="water">        
-            <option value=""><?php _e( 'Besoin en Eau', 'textdomain' ); ?></option>
-            <option value="faible"><?php _e( 'Faible', 'textdomain' ); ?></option>
-            <option value="moyen"><?php _e( 'Moyen', 'textdomain' ); ?></option>
-            <option value="fort"><?php _e( 'Fort', 'textdomain' ); ?></option>
-        </select>
-
-        <select class="badge badge-secondary articles-list-page__filters__filters-list__list__item" name="place" id="place">        
-            <option value=""><?php _e( 'Emplacement', 'textdomain' ); ?></option>
-            <option value="Extérieur"><?php _e( 'Extérieur', 'textdomain' ); ?></option>
-            <option value="En pleine terre"><?php _e( 'En pleine terre', 'textdomain' ); ?></option>
-            <option value="Pépinière"><?php _e( 'Pépinière', 'textdomain' ); ?></option>
-            <option value="Sous-abri"><?php _e( 'Sous-abri', 'textdomain' ); ?></option>
-        </select>
-
-
-
-        <select class="badge badge-danger articles-list-page__filters__filters-list__list__item" name="difficulty" id="difficulty">        
-            <option value=""><?php _e( 'Difficulté', 'textdomain' ); ?></option>
-            <option value="Facile"><?php _e( 'Facile', 'textdomain' ); ?></option>
-            <option value="Moyenne"><?php _e( 'Moyenne', 'textdomain' ); ?></option>
-            <option value="Importante"><?php _e( 'Importante', 'textdomain' ); ?></option>
-        </select>
-
-
-        <select class="badge badge-warning articles-list-page__filters__filters-list__list__item" name="spacing" id="spacing">        
-            <option value=""><?php _e( 'Espacement', 'textdomain' ); ?></option>
-            <option value="0 - 10 cm"><?php _e( '0 à 10 cm', 'textdomain' ); ?></option>
-            <option value="10 - 20 cm"><?php _e( '10 à 20 cm', 'textdomain' ); ?></option>
-            <option value="20 - 30 cm "><?php _e( '20 à 30 cm', 'textdomain' ); ?></option>
-            <option value="30 - 40 cm"><?php _e( '30 à 40 cm', 'textdomain' ); ?></option>
-            <option value="40 - 50 cm"><?php _e( '40 à 50 cm', 'textdomain' ); ?></option>
-            <option value="50 - 60 cm"><?php _e( '50 à 60 cm', 'textdomain' ); ?></option>
-            <option value="60 - 70 cm"><?php _e( '60 à 70 cm', 'textdomain' ); ?></option>
-            <option value="70 - 80 cm"><?php _e( '70 à 80 cm', 'textdomain' ); ?></option>
-            <option value="Supérieur à 80 cm"><?php _e( 'Supérieur à 80 cm', 'textdomain' ); ?></option>
-        </select>
-
-        <select class="badge badge-info articles-list-page__filters__filters-list__list__item" name="plant_season" id="plant_season">        
-            <option value=""><?php _e( 'Saison de semi', 'textdomain' ); ?></option>
-            <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
-            <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
-            <option value="Automne"><?php _e( 'Automne', 'textdomain' ); ?></option>
-            <option value="Hiver"><?php _e( 'Hiver', 'textdomain' ); ?></option>
-        </select>
-
-        <select class="badge badge-info articles-list-page__filters__filters-list__list__item name="harvest_season" id="harvest_season">        
-            <option value=""><?php _e( 'Saison de récolte', 'textdomain' ); ?></option>
-            <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
-            <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
-            <option value="Automne"><?php _e( 'Automne', 'textdomain' ); ?></option>
-            <option value="Hiver"><?php _e( 'Hiver', 'textdomain' ); ?></option>
-        </select>
-
+<option value="">Emplacement</option>
+        <?php $field = get_field_object('emplacement'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+    
+</select>
 
     
 
-    </form>
+<!-- Difficulté -->
+
+<select class="badge badge-danger" name="type" id="type">
+
+<option value="">Difficulté</option>
+        <?php $field = get_field_object('difficulte'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+</select>
+    
+
+<!-- Espacement -->
+
+<select class="badge badge-warning" name="type" id="type">
+
+<option value="">Espacement</option>
+        <?php $field = get_field_object('espacement_des_pieds'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+</select>
+
+<!-- Saison de semi-->
+
+<select class="badge badge-info" name="type" id="type">
+
+<option value="">Saison de semis</option>
+        <?php $field = get_field_object('saison_de_semis'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+</select>
+
+
+<!-- Saison de récolte-->
+
+<select class="badge badge-info" name="type" id="type">
+
+<option value="">Saison de récolte</option>
+        <?php $field = get_field_object('saison_de_recolte'); 
+        if( $field['choices'] ) : ?>
+                <?php foreach( $field['choices'] as $item): ?>
+<option value="<?php echo $item ?>"><?php echo $item; ?></option>
+                <?php endforeach; ?>
+        <?php endif; ?>
+</select>
+
+
+    <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" />
+
+</form>
 
 
