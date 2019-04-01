@@ -28,6 +28,19 @@
            
             
         }
+
+        &__log {
+            display: flex;
+
+            &__link {
+                margin-right: 0.5em;
+            }
+
+            :last-child {
+                
+                margin-right: 0em; 
+            }
+        } 
         
         &__head {
 
