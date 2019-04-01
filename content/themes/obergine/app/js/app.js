@@ -38,42 +38,35 @@ var app = {
   },
 
   foireAuxQuestions: function() {
+    app.divClicked = document.querySelectorAll('.faq-page__container__question');
 
-    app.titlesClicked = document.querySelectorAll('.faq-page__container__question__ask');
+    app.allParagraphs = document.querySelectorAll('.faq-page__container__question__answer');
 
-    for (var indexH2 = 0; indexH2 < app.titlesClicked.length ; indexH2 += 1){
-      app.titlesClicked[indexH2].addEventListener('click', app.openClicked);
+    app.allArrows = document.querySelectorAll('.fa-arrow-right');
+
+    for (var indexDiv = 0 ; indexDiv < app.divClicked.length ; indexDiv += 1){
+      app.divClicked[indexDiv].addEventListener('click', app.Clicked);
     }
-
-    app.paragraphsClicked = document.querySelectorAll('.faq-page__container__question__answer');
-
-    for (var indexP = 0 ; indexP < app.paragraphsClicked.length ; indexP += 1){
-      app.paragraphsClicked[indexP].addEventListener('click', app.closedClicked);
-    }
-
   },
 
-  openClicked: function() {
+  Clicked: function() {
     var elementClicked = event.target;
-    
-    app.titleClickedAnswer = elementClicked.nextElementSibling;
-    app.titleClickedAnswer.classList.remove('d-none');
-    
-    app.arrowClicked = elementClicked.firstElementChild;
-    app.arrowClicked.classList.remove('fa-arrow-right');
-    app.arrowClicked.classList.add('fa-arrow-down');
 
-    
-    },
+    elementClicked.lastElementChild.classList.remove('fa-arrow-right');
+    elementClicked.lastElementChild.classList.add('fa-arrow-down');
 
-    closedClicked: function() {
-      var elementClicked = event.target;
-
-      elementClicked.classList.add('d-none');
-      app.arrowClicked.classList.remove('fa-arrow-down');
-      app.arrowClicked.classList.add('fa-arrow-right');
-
+    if (elementClicked.nodeName === 'H2'){
+      elementClicked = elementClicked.parentNode;
     }
+
+    for (var indexP = 0 ; indexP < app.allParagraphs.length ; indexP += 1){
+      app.allArrows[indexP].classList.remove('fa-arrow-down');
+      app.allArrows[indexP].classList.add('fa-arrow-right');
+      app.allParagraphs[indexP].classList.add('d-none');
+    }
+
+    elementClicked.lastElementChild.classList.remove('d-none');
+  }
 
 };
 
