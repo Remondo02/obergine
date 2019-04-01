@@ -65,9 +65,15 @@
         
         &__log {
             margin-left: 1.2em;
+
+            :hover {
+                color: $color-title-primary;
+            }
             
             &__link {
                 color: white;
+
+               
 
                 :hover {
                     color: $color-title-primary;

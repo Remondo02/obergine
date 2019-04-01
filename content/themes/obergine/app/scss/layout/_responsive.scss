@@ -230,6 +230,13 @@
 
     body {
 
+        .header__header-up__log {
+            :hover {
+                color: $color-title-primary;
+            }
+
+        }
+
         
         .menu-social-links-container {
             ul {
