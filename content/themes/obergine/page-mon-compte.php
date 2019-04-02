@@ -18,6 +18,25 @@ get_header();
 <footer class='col-3'>
 <h2 class="h2">Mes favoris</h2>
 <?php the_user_favorites_list($user_id = null, $site_id = null, $include_links = true, $filters = null, $include_button = false, $include_thumbnails = false, $thumbnail_size = 'thumbnail', $include_excerpt = false);?>
+<?php 
+
+if (is_user_logged_in()){
+
+    var_dump(get_the_date('F'));
+    $field = get_field_object('type');
+
+    $user_ids = get_user_favorites();
+
+    foreach($user_ids as $id) {
+        $item = get_the_title($id) . ', ' . $item ;
+    }
+        $message = 'Il serait temps de planter :' . $item;
+        var_dump($message);
+
+
+};
+
+?>
 </footer>
 
 

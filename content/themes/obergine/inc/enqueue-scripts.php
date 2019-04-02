@@ -13,4 +13,18 @@ function obergine_enqueue_scripts()
         false,
         true
     );
+    wp_enqueue_script(
+        'obergine-script-burger-menu',
+        get_theme_file_uri( 'public/js/burger.js' ),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'obergine-script-rellax',
+        get_theme_file_uri( 'public/js/rellax.js' ),
+        [],
+        false,
+        true
+    );
 }

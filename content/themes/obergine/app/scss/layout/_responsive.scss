@@ -1,5 +1,7 @@
 @media (min-width: 300px) {
 
+    
+
     .footer__nav {
         display: none;
     }
@@ -126,6 +128,21 @@
         }
     }
 
+    // header panier / login
+
+    .header__header-up__log {
+
+        &__link {
+
+            margin-right: 1.5em;
+        }
+
+        :last-child {
+                
+            margin-right: 0em; 
+        }
+    }
+
     
 
     // article page
@@ -212,6 +229,13 @@
     // Social Menu
 
     body {
+
+        .header__header-up__log {
+            :hover {
+                color: $color-title-primary;
+            }
+
+        }
 
         
         .menu-social-links-container {
