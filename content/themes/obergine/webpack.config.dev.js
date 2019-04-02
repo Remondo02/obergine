@@ -20,14 +20,16 @@ const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const watchMode = process.env.NODE_ENV === 'watch';
 
 let config = {
-  entry: [
-    './app/js/app.js',
-    './app/scss/main.scss',
-  ],
+  entry: {
+    app: './app/js/app.js',
+    burger: './app/js/burger.js',
+    rellax: './app/js/rellax.js',
+    main: './app/scss/main.scss'
+  },
   mode: 'development',
   output: {
     path: path.resolve(__dirname, "./public"),
-    filename: "js/app.js"
+    filename: "js/[name].js"
   },
   devtool: 'source-map',
   module: {
