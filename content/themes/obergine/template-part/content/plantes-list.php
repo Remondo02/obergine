@@ -42,7 +42,7 @@
                 <div class="home-page__post__head__content">
                     <div class="home-page__post__head__content__head">
                         <h2 class="home-page__post__head__content__head__product"><?php the_title(); ?></h2>
-                        <span class="home-page__post__head__content__head__family">Famille</span>
+                        <span class="home-page__post__head__content__head__family"><?php the_field('famille'); ?></span>
                     </div>
                     
                 </div>

@@ -26,7 +26,7 @@ if ( have_posts() ) :
                 // echo '<pre>';
                 // var_dump($usermeta);
                 ?>
-                <button class="main__container__main-head__top__header__button__buy">Acheter des graines <i class="main__container__main-head__top__header__buy__icone fa fa-shopping-cart" aria-hidden="true"></i></button>
+                 <button class="main__container__main-head__top__header__button__buy"> <a class="main__container__main-head__top__header__button__buy" href='<?php the_field('url_produit'); ?>'>Ajouter au panier <i class="main__container__main-head__top__header__buy__icone fa fa-shopping-cart" aria-hidden="true"></i></a></button>
             
             </div>
 
