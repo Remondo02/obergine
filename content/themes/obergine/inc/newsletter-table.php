@@ -18,45 +18,50 @@ require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 dbDelta($newsletter_sql);
 
 
+function obergine_newsletter_table_select() {
 
+    global $wpdb;
+
+    $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
+
+}
+
+obergine_newsletter_table_select();
 
 function obergine_newsletter_table_insert() {
     global $wpdb;
 
     $newsletter_table_name = $wpdb->prefix . 'newsletter_table';
 
+    $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
+
     $email = $_POST['email'];
     dump($email);
-    if(isset($email)){
-        $wpdb->insert(
-            'wp_newsletter_table',
-            array(
-                'mail' => $email,
-            ),
-            array(
-                '%s',
-            )
-        );
-        echo 'define';
+
+    $userNewsletterMail = [];
+    foreach($myrows as $userNewsletter){
+        $userNewsletterMail[] = $userNewsletter->mail;
     }
-    else {
-        echo 'non défini';
+
+    dump($userNewsletterMail);
+
+    if(isset($email)){
+        if(in_array($email, $userNewsletterMail)){
+            echo 'Adresse déjà dans la BDD';
+        }
+        else{
+            echo 'Nouveau mail ajouté';
+            $wpdb->insert(
+                'wp_newsletter_table',
+                array(
+                    'mail' => $email,
+                ),
+                array(
+                    '%s',
+                )
+            );
+        }
     }
 }
 
 obergine_newsletter_table_insert();
-
-// function obergine_newsletter_table_select() {
-
-//     global $wpdb;
-
-//     dump($wpdb);
-
-//     $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
-
-//     echo $myrows;
-
-// }
-
-// obergine_newsletter_table_select();
-
