@@ -23,6 +23,7 @@ get_header();
 if (is_user_logged_in()){
 
     var_dump(get_the_date('F'));
+    $field = get_field_object('type');
 
     $user_ids = get_user_favorites();
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05b96443edcf8070bc37d8175219d9fd",
+    "content-hash": "2d6fa0be258b20af251d907a64193a92",
     "packages": [
         {
             "name": "composer/installers",
@@ -303,9 +303,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.7.12.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.7.12.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -323,15 +321,31 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/favorites",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/favorites/",
+                "reference": "tags/2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/favorites.2.3.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/favorites/"
         },
         {
             "name": "wpackagist-plugin/flamingo",
@@ -343,9 +357,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/flamingo.1.9.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/flamingo.1.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -363,9 +375,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/var-dumper.zip?timestamp=1450719040",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/var-dumper.zip?timestamp=1450719040"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -383,9 +393,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -405,9 +413,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -425,9 +431,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simply-show-hooks.1.2.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/simply-show-hooks.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -445,9 +449,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/what-the-file.1.5.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/what-the-file.1.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -465,9 +467,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-extension.zip?timestamp=1553089904",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-extension.zip?timestamp=1553089904"
             },
             "require": {
                 "composer/installers": "~1.0"
