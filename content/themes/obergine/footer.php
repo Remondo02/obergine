@@ -7,9 +7,7 @@
     </nav>
 
     <div class="footer__social-link">
-        <i class="fa fa-facebook-f"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
+    <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
     </div>
 
     <div class="footer__newsletter">

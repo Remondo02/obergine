@@ -18,14 +18,26 @@
         
         &__list {
             // responsive tablette
-            //display: flex;
+            
             justify-content: space-between;
             
             &__item {
                 &__link {
                     color: $color-secondary;
+                    :hover {
+                        //text-decoration: none;
+                        color: $color-title-primary;
+                    }
+
                 }
             }
+        }
+    }
+
+    #menu-footer-nav-menu {
+        :hover {
+            text-decoration: none;
+            color: $color-title-primary;
         }
     }
 
@@ -34,8 +46,12 @@
         min-width: 20%;
         display: flex;
 
-        // responsive mobile.
-        display: none;
+        i {
+
+            color: $color-secondary;
+        }
+
+        
 
        
 
