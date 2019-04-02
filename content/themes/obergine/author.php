@@ -2,14 +2,15 @@
 get_header();
 ?>
 <main class="main home-page">
-<?php
+    <h2>Articles rédigés par <?php the_author(); ?>
+<?php 
 if ( have_posts() ) :
     
     $i=0;
 
     while ( have_posts() ) :        
 
-       the_post();
+        the_post();
 
         $i++;
         
@@ -33,8 +34,9 @@ if ( have_posts() ) :
     endwhile;
 endif;
 wp_reset_postdata();
-
 ?>
 </main>
+
 <?php
+
 get_footer();

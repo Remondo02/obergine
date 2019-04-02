@@ -12,38 +12,35 @@ function wooc_extra_register_fields() {?>
     <?php
 }
 add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
-
-
-
 function woocom_validate_extra_register_fields( $username, $email, $validation_errors )
-
 {
-
 if (isset($_POST['billing_first_name']) && empty($_POST['billing_first_name']) ) {
+
 
 
 $validation_errors->add('billing_first_name_error', __('Prenom requis', 'woocommerce'));
 
 
 }
-
 if (isset($_POST['billing_last_name']) && empty($_POST['billing_last_name']) ) {
+
 
 
 $validation_errors->add('billing_last_name_error', __('Nom requis', 'woocommerce'));
 
 
-}
 
+}
 return $validation_errors;
-
 }
+
 
 add_action('woocommerce_register_post', 'woocom_validate_extra_register_fields', 10, 2);
 
 
 
 function woocom_save_extra_register_fields($customer_id) {
+
 
 
     if (isset($_POST['billing_first_name'])) {
@@ -62,5 +59,6 @@ function woocom_save_extra_register_fields($customer_id) {
     }
 
     
+
     add_action('woocommerce_created_customer', 'woocom_save_extra_register_fields');
 
