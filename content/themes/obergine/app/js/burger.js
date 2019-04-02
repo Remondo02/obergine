@@ -20,12 +20,12 @@ var app = {
       app.times = document.querySelector('.fa-times').parentElement;
 
       if(elementClicked.className === 'fa fa-bars'){
-        app.times.parentElement.classList.remove('d-none', 'overlay');
+        app.times.parentElement.classList.remove('d-none');
         app.bars.parentElement.classList.add('d-none');
       }
       else {
         app.bars.parentElement.classList.remove('d-none');
-        app.times.parentElement.classList.add('d-none', 'overlay');
+        app.times.parentElement.classList.add('d-none');
       }
     },
   };

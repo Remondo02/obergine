@@ -41,7 +41,7 @@
             <button class="burger-menu"><i class="fa fa-bars"></i></button>
         </div>
 
-        <div class="header__header-up__nav d-none">
+        <div class="header__header-up__nav overlay d-none">
             <button class="burger-menu"><i class="fa fa-times"></i></button>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
