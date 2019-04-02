@@ -11,6 +11,13 @@ get_header();
         <?php
         get_template_part( 'template-part/searchform-advanced' );
 
+
+    
+        
+        var_dump($yuiop);
+
+        
+
         ?>
     </section>
     <section class="articles-list-page__main">

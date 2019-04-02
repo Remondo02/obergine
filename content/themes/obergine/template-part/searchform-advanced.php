@@ -77,7 +77,7 @@
         <option value=""><?php _e( 'Espacement', 'textdomain' ); ?></option>
         <option value="0 - 10 cm"><?php _e( '0 à 10 cm', 'textdomain' ); ?></option>
         <option value="10 - 20 cm"><?php _e( '10 à 20 cm', 'textdomain' ); ?></option>
-        <option value="20 - 30 cm "><?php _e( '20 à 30 cm', 'textdomain' ); ?></option>
+        <option value="20 - 30 cm"><?php _e( '20 à 30 cm', 'textdomain' ); ?></option>
         <option value="30 - 40 cm"><?php _e( '30 à 40 cm', 'textdomain' ); ?></option>
         <option value="40 - 50 cm"><?php _e( '40 à 50 cm', 'textdomain' ); ?></option>
         <option value="50 - 60 cm"><?php _e( '50 à 60 cm', 'textdomain' ); ?></option>
