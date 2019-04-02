@@ -181,6 +181,7 @@
     }
 
     // Banner
+    
     .main {
 
         .banner {
@@ -203,16 +204,9 @@
         }
 
         &__filters {
-
-            
-
             margin-top: $gutter;
-
-            //border-right: 1px solid $color-border-primary;
             
             &__filters-list {
-
-                //position: fixed;
 
                 
                 &__list {
@@ -225,8 +219,7 @@
 
                             &:hover {
                                 background-color: $color-background-primary;
-                                // text-decoration: none;
-                                // border: 1px solid blue;
+                                
                                 
                             }
                         }
@@ -319,12 +312,16 @@
 
             
         }
-        .menu-social-links-container {
 
-            ul {
+        footer {
 
-                display: flex;
-                flex-direction: column;
+            .menu-social-links-container {
+    
+                ul {
+    
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
@@ -349,9 +346,7 @@
         .home-page__post {
             
             border-bottom: none;
-            // border-right: 1px solid $color-border-primary;
-            // margin-bottom: 2em;
-            // margin-top: 2em;
+            
             
         }
     }
@@ -364,6 +359,7 @@
     }
 
     // Banner
+
     .main {
 
         .banner {
@@ -378,18 +374,22 @@
 @media (min-width: 1200px) {
 
     body {
-        .footer__social-link {
-            display: initial;
-            display: flex;
-            flex-direction: initial;
-            order: initial;
-        }
-        .menu-social-links-container {
 
-            ul {
+        footer {
 
+            .footer__social-link {
+                display: initial;
                 display: flex;
                 flex-direction: initial;
+                order: initial;
+            }
+            .menu-social-links-container {
+    
+                ul {
+    
+                    display: flex;
+                    flex-direction: initial;
+                }
             }
         }
         
@@ -405,6 +405,7 @@
     }
 
     // Banner
+
     .main {
 
         .banner {

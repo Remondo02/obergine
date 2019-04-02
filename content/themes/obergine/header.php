@@ -14,7 +14,7 @@
 
         <div class="header__header-up__social-links">
             
-            <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
+            <?php dynamic_sidebar( 'new-social-widget-area' ) ; ?>
            
         
         </div>

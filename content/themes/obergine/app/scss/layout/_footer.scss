@@ -24,8 +24,20 @@
             &__item {
                 &__link {
                     color: $color-secondary;
+                    :hover {
+                        //text-decoration: none;
+                        color: $color-title-primary;
+                    }
+
                 }
             }
+        }
+    }
+
+    #menu-footer-nav-menu {
+        :hover {
+            text-decoration: none;
+            color: $color-title-primary;
         }
     }
 

@@ -1,7 +1,6 @@
 .header {
     background-color: $color-primary;
-    //margin-bottom: $gutter-smale / 2;
-
+   
     &__header-up {
 
         
@@ -18,15 +17,16 @@
             &__link {
                 color: $color-secondary;
                 width: 5rem;
-                //display: flex;
-                //justify-content: space-around;
-
-                :hover {
-                    color: $color-title-primary;
-                }
+               
             }
            
             
+        }
+
+        #menu-social-links {
+            :hover {
+                color: $color-title-primary;
+            }
         }
 
         &__log {
