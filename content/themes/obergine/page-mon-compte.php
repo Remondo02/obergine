@@ -18,22 +18,35 @@ get_header();
 <footer class='col-3'>
 <h2 class="h2">Mes favoris</h2>
 <?php the_user_favorites_list($user_id = null, $site_id = null, $include_links = true, $filters = null, $include_button = false, $include_thumbnails = false, $thumbnail_size = 'thumbnail', $include_excerpt = false);?>
-<?php 
 
-if (is_user_logged_in()){
+<?php
 
-    var_dump(get_the_date('F'));
-    $field = get_field_object('type');
 
-    $user_ids = get_user_favorites();
+if (is_user_logged_in()){ 
 
-    foreach($user_ids as $id) {
-        $item = get_the_title($id) . ', ' . $item ;
+    $user_posts_ids = get_user_favorites();
+    foreach($user_posts_ids as $id) {  
+        $plant_month = get_field( "mois_de_semis", $id); 
+        
+        foreach($plant_month as $key) {                   
+            
+            $key = strtolower($key); 
+            $month = date_i18n('F');
+            
+            $month = '<span class="main__container__main-container__top__content__icones__month__march planting-date date-valid date-icone">'.$month.'</span>';         
+            
+            
+            if( $key == $month) {
+                $item = get_the_title($id) . ', ' . $item ;
+                
+            }
+            
+        }
+        
     }
-        $message = 'Il serait temps de planter :' . $item;
-        var_dump($message);
-
-
+    $message = 'Légumes et fruits à planter:' . $item;
+    var_dump($message);
+        
 };
 
 ?>
