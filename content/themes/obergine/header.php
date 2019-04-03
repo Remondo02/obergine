@@ -38,11 +38,11 @@
         <!-- Navigation menu burger -->
         <div class="header__header-up__nav">
 
-            <button class="burger-menu"><i class="fa fa-bars"></i></button>
+            <button class="burger-menu btn btn-light"><i class="fa fa-bars"></i></button>
         </div>
 
         <div class="header__header-up__nav overlay d-none">
-            <button class="burger-menu"><i class="fa fa-times"></i></button>
+            <button class="burger-menu ovleray__cross btn btn-light"><i class="fa fa-times"></i></button>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
 

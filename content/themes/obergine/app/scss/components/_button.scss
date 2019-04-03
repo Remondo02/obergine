@@ -8,3 +8,23 @@
         text-decoration-line: none;
     }
 }
+
+.header__header-up__nav {
+    >button {
+        margin-left: $gutter-smale / 4;
+        max-width: 60%;
+        display: flex;
+        justify-content: center;
+        
+        >i {
+            font-size: 80%;
+            
+        }
+    }
+}
+
+.overlay {
+    &__cross {
+        
+    }
+}
