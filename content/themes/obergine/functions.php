@@ -153,7 +153,7 @@ function isa_test_cron_job_send_mail() {
         }
         
         $message = 'Légumes et fruits à planter:' . $item;
-        $to = 'emma.marceau@gmail.com';
+        $to = '';
         $subject = 'Dis moi que ça marche !';
         wp_mail( $to, $subject, $message );
 
