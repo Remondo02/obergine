@@ -15,6 +15,11 @@ require get_theme_file_path('inc/newsletter-table.php');
 
 
 
+
+
+
+
+
 // function page404_redirection()
 // {
 //  global $mapage;

@@ -35,30 +35,34 @@ function obergine_newsletter_table_insert() {
 
     $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
 
-    $email = $_POST['email'];
+    if(!empty($_POST['email'])){
 
-    $userNewsletterMail = [];
-    foreach($myrows as $userNewsletter){
-        $userNewsletterMail[] = $userNewsletter->mail;
+        $email = $_POST['email'];
+    
+        $userNewsletterMail = [];
+        foreach($myrows as $userNewsletter){
+            $userNewsletterMail[] = $userNewsletter->mail;
+        }
+    
+        if(isset($email)){
+            if(in_array($email, $userNewsletterMail)){
+                echo 'Vous avez déjà souscrit à la newsletter';
+            }
+            else{
+                echo 'Merci d\'avoir souscrit à la newsletter';
+                $wpdb->insert(
+                    'wp_newsletter_table',
+                    array(
+                        'mail' => $email,
+                    ),
+                    array(
+                        '%s',
+                    )
+                );
+            }
+        }
     }
 
-    if(isset($email)){
-        if(in_array($email, $userNewsletterMail)){
-            echo 'Vous avez déjà souscrit à la newsletter';
-        }
-        else{
-            echo 'Merci d\'avoir souscrit à la newsletter';
-            $wpdb->insert(
-                'wp_newsletter_table',
-                array(
-                    'mail' => $email,
-                ),
-                array(
-                    '%s',
-                )
-            );
-        }
-    }
 }
 
 obergine_newsletter_table_insert();
