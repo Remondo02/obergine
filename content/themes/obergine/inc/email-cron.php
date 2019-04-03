@@ -30,7 +30,7 @@ function isa_test_cron_job_send_mail() {
 
         if (!is_array($user_posts_ids)) {
             continue;
-        };
+        }
 
         foreach($user_posts_ids as $id) {  
             
@@ -38,10 +38,10 @@ function isa_test_cron_job_send_mail() {
 
             if (!is_array($plant_month)) {
                 continue;
-            };
+            }
             
-            foreach($plant_month as $key) {                 
-
+            foreach($plant_month as $key) {                   
+                                
                 $key = strtolower($key); 
                 $month = date_i18n('F');
                 
