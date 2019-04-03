@@ -55,4 +55,3 @@ function isa_test_cron_job_send_mail() {
  
     wp_mail( $to, $subject, $message );
  
-} 

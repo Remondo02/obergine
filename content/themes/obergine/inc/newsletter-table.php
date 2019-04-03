@@ -36,21 +36,18 @@ function obergine_newsletter_table_insert() {
     $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
 
     $email = $_POST['email'];
-    dump($email);
 
     $userNewsletterMail = [];
     foreach($myrows as $userNewsletter){
         $userNewsletterMail[] = $userNewsletter->mail;
     }
 
-    dump($userNewsletterMail);
-
     if(isset($email)){
         if(in_array($email, $userNewsletterMail)){
-            echo 'Adresse déjà dans la BDD';
+            echo 'Vous avez déjà souscrit à la newsletter';
         }
         else{
-            echo 'Nouveau mail ajouté';
+            echo 'Merci d\'avoir souscrit à la newsletter';
             $wpdb->insert(
                 'wp_newsletter_table',
                 array(
