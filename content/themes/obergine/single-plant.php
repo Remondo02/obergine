@@ -121,7 +121,7 @@ if ( have_posts() ) :
 
     <div id="meteo" class="mt-3">
         <h3 class="main__container__main-container__bot__content__title">Météo</h3>
-        <form action="" method="post" class="form-group" onsubmit="getMeteo()">
+        <form action="" method="post" class="form-group">
             <label for="form_name">Votre ville : </label>
             <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement">
                 <option value="">Choisir votre ville</option>
