@@ -13,25 +13,27 @@
                <div class="search-container">
                <input type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
 
-               <input class="search-button border-0 bg-muted rounded text-dark" type="submit" id="searchsubmit" value="Search" />
+               <input class="search-button border-0 bg-muted rounded text-dark" type="submit" id="searchsubmit" value="Rechercher" />
 
            </div>
 
+           <hr>
+    <h6>Type</h6>
+
            <select class="badge badge-light" name="type" id="type">
         
-        <option value=""><?php _e( 'Type', 'textdomain' ); ?></option>
+        <option value=""><?php _e( 'Choisissez un type', 'textdomain' ); ?></option>
         <option value="Aromates"><?php _e( 'Aromates', 'textdomain' ); ?></option>
         <option value="Fruits"><?php _e( 'Fruits', 'textdomain' ); ?></option>
         <option value="Légumes"><?php _e( 'Légumes', 'textdomain' ); ?></option>
         <option value="Plantes"><?php _e( 'Plantes', 'textdomain' ); ?></option>
 
     </select>
-
-
-
-    <select class="badge badge-success" name="family" id="family">
+    <hr>
+    <h6>Famille</h6>
+    <select class="badge badge-light" name="family" id="family">
         
-        <option value=""><?php _e( 'Famille', 'textdomain' ); ?></option>
+        <option value=""><?php _e( 'Choisissez une famille', 'textdomain' ); ?></option>
         <option value="Alliacées"><?php _e( 'Alliacées', 'textdomain' ); ?></option>
         <option value="Amaryllidacées"><?php _e( 'Amaryllidacées', 'textdomain' ); ?></option>
         <option value="Apiacées"><?php _e( 'Apiacées', 'textdomain' ); ?></option>
@@ -45,36 +47,42 @@
 
     </select>
 
+    <hr>
+    <h6>Besoin en eau</h6>
 
 
-
-    <select class="badge badge-primary" name="water" id="water">        
-        <option value=""><?php _e( 'Besoin en Eau', 'textdomain' ); ?></option>
+    <select class="badge badge-light" name="water" id="water">        
+        <option value=""><?php _e( 'Choisissez le besoin en eau', 'textdomain' ); ?></option>
         <option value="faible"><?php _e( 'Faible', 'textdomain' ); ?></option>
         <option value="moyen"><?php _e( 'Moyen', 'textdomain' ); ?></option>
         <option value="fort"><?php _e( 'Fort', 'textdomain' ); ?></option>
     </select>
 
-    <select class="badge badge-secondary" name="place" id="place">        
-        <option value=""><?php _e( 'Emplacement', 'textdomain' ); ?></option>
+    <hr>
+    <h6>Emplacement</h6>
+
+    <select class="badge badge-light" name="place" id="place">        
+        <option value=""><?php _e( 'Choisissez l\'emplacement' ,'textdomain' ); ?></option>
         <option value="Extérieur"><?php _e( 'Extérieur', 'textdomain' ); ?></option>
         <option value="En pleine terre"><?php _e( 'En pleine terre', 'textdomain' ); ?></option>
         <option value="Pépinière"><?php _e( 'Pépinière', 'textdomain' ); ?></option>
         <option value="Sous-abri"><?php _e( 'Sous-abri', 'textdomain' ); ?></option>
     </select>
 
+    <hr>
+    <h6>Difficulté</h6>
 
-
-    <select class="badge badge-danger" name="difficulty" id="difficulty">        
-        <option value=""><?php _e( 'Difficulté', 'textdomain' ); ?></option>
+    <select class="badge badge-light" name="difficulty" id="difficulty">        
+        <option value=""><?php _e( 'Choisissez la difficulté', 'textdomain' ); ?></option>
         <option value="Facile"><?php _e( 'Facile', 'textdomain' ); ?></option>
         <option value="Moyenne"><?php _e( 'Moyenne', 'textdomain' ); ?></option>
         <option value="Importante"><?php _e( 'Importante', 'textdomain' ); ?></option>
     </select>
 
-
-    <select class="badge badge-warning" name="spacing" id="spacing">        
-        <option value=""><?php _e( 'Espacement', 'textdomain' ); ?></option>
+    <hr>
+    <h6>Espacement des pieds</h6>
+    <select class="badge badge-light" name="spacing" id="spacing">        
+        <option value=""><?php _e( 'Choisissez l\'espacement des pieds', 'textdomain' ); ?></option>
         <option value="0 - 10 cm"><?php _e( '0 à 10 cm', 'textdomain' ); ?></option>
         <option value="10 - 20 cm"><?php _e( '10 à 20 cm', 'textdomain' ); ?></option>
         <option value="20 - 30 cm"><?php _e( '20 à 30 cm', 'textdomain' ); ?></option>
@@ -86,16 +94,19 @@
         <option value="Supérieur à 80 cm"><?php _e( 'Supérieur à 80 cm', 'textdomain' ); ?></option>
     </select>
 
-    <select class="badge badge-info" name="plant_season" id="plant_season">        
-        <option value=""><?php _e( 'Saison de semi', 'textdomain' ); ?></option>
+    <hr>
+    <h6>Saison de semis</h6>
+    <select class="badge badge-light" name="plant_season" id="plant_season">        
+        <option value=""><?php _e( 'Choisissez une saison de semi', 'textdomain' ); ?></option>
         <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
         <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
         <option value="Automne"><?php _e( 'Automne', 'textdomain' ); ?></option>
         <option value="Hiver"><?php _e( 'Hiver', 'textdomain' ); ?></option>
     </select>
-
-    <select class="badge badge-info" name="harvest_season" id="harvest_season">        
-        <option value=""><?php _e( 'Saison de récolte', 'textdomain' ); ?></option>
+    <hr>
+    <h6>Saison de récolte</h6>
+    <select class="badge badge-light" name="harvest_season" id="harvest_season">        
+        <option value=""><?php _e( 'Choisissez une saison de récolte', 'textdomain' ); ?></option>
         <option value="Printemps"><?php _e( 'Printemps', 'textdomain' ); ?></option>
         <option value="Été"><?php _e( 'Été', 'textdomain' ); ?></option>
         <option value="Automne"><?php _e( 'Automne', 'textdomain' ); ?></option>
