@@ -27,4 +27,11 @@ function obergine_enqueue_scripts()
         false,
         true
     );
+    wp_enqueue_script(
+        'obergine-script-meteo',
+        get_theme_file_uri( 'public/js/meteo.js' ),
+        [],
+        false,
+        true
+    );
 }
