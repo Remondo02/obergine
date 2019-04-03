@@ -22,32 +22,29 @@ get_header();
 <?php
 
 
-if (is_user_logged_in()){ 
+// if (is_user_logged_in()){ 
 
-    $user_posts_ids = get_user_favorites();
-    foreach($user_posts_ids as $id) {  
-        $plant_month = get_field( "mois_de_semis", $id); 
+//     $user_posts_ids = get_user_favorites();
+//     foreach($user_posts_ids as $id) {  
+//         $plant_month = get_field( "mois_de_semis", $id); 
         
-        foreach($plant_month as $key) {                   
+//         foreach($plant_month as $key) {                   
             
-            $key = strtolower($key); 
-            $month = date_i18n('F');
+//             $key = strtolower($key); 
+//             $month = date_i18n('F');
             
-            $month = '<span class="main__container__main-container__top__content__icones__month__march planting-date date-valid date-icone">'.$month.'</span>';         
+//             $month = '<span class="main__container__main-container__top__content__icones__month__march planting-date date-valid date-icone">'.$month.'</span>';                  
             
-            
-            if( $key == $month) {
-                $item = get_the_title($id) . ', ' . $item ;
-                
-            }
-            
-        }
+//             if( $key == $month) {
+//                 $item = get_the_title($id) . ', ' . $item ;                
+//             }
+//         }
         
-    }
-    $message = 'Légumes et fruits à planter:' . $item;
-    var_dump($message);
+//     }
+//     $message = 'Légumes et fruits à planter:' . $item;
+//     var_dump($message);
         
-};
+// };
 
 ?>
 </footer>
