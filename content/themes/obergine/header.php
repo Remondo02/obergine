@@ -37,16 +37,15 @@
 
         <!-- Navigation menu burger -->
         <div class="header__header-up__nav">
-            <nav class="header__header-up__nav navbar navbar-expand-lg navbar-light">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    
-                    <li class="nav-item">
+
+            <button class="burger-menu"><i class="fa fa-bars"></i></button>
+        </div>
+
+        <div class="header__header-up__nav overlay d-none">
+            <button class="burger-menu"><i class="fa fa-times"></i></button>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+
                     <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
                     </li>
                     <li class="nav-item dropdown">
