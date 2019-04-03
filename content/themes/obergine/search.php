@@ -10,29 +10,33 @@ get_header();
 <main class="main articles-list-page">
 
 
-<?php
+    <?php
 
-get_template_part( 'template-part/searchform-advanced' );
+    get_template_part( 'template-part/searchform-advanced' );
 
-if ( have_posts() ) :
-    while ( have_posts() ):
-        the_post();
-        
+    ?>
+    <div <?php post_class( 'home-page__group search-page-container' ); ?>>
+        <?php
 
-        get_template_part(
-            'template-part/content/post',
-            'search'
-        );
-        
+        if ( have_posts() ) :
+            while ( have_posts() ):
+                the_post();
+                
 
-        
-    endwhile;
-endif;
+                get_template_part(
+                    'template-part/content/post',
+                    'search'
+                );
+                
 
-wp_reset_postdata();
+                
+            endwhile;
+        endif;
 
-?>
+        wp_reset_postdata();
 
+        ?>
+    </div>
 
 </main>
 
