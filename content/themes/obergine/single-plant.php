@@ -119,6 +119,43 @@ if ( have_posts() ) :
         </div>
     </div>
 
+    <div id="meteo" class="mt-3">
+        <h3 class="main__container__main-container__bot__content__title">Météo</h3>
+        <form action="" method="post" class="form-group" onsubmit="getMeteo()">
+            <label for="form_name">Votre ville : </label>
+            <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement">
+                <option value="">Choisir votre ville</option>
+                <option value="lille">Lille</option>
+                <option value="lyon">Lyon</option>
+                <option value="paris">Paris</option>
+                <option value="marseille">Marseille</option>
+            </select>
+            <input type="submit">
+        </form>
+        <div class="d-flex">
+            <div id="meteo-info1 ml-5 p-5">
+                <p id="meteo-day1"></p>
+                <img id="meteo-image1" src="" alt="">
+                <p id="meteo-condition1"></p>
+            </div>
+            <div id="meteo-info2 ml-5 p-5">
+                <p id="meteo-day2"></p>
+                <img id="meteo-image2" src="" alt="">
+                <p id="meteo-condition2"></p>
+            </div>    
+            <div id="meteo-info3 ml-5 p-5">
+                <p id="meteo-day3"></p>
+                <img id="meteo-image3" src="" alt="">
+                <p id="meteo-condition3"></p>
+            </div>    
+            <div id="meteo-info4 ml-5 p-5">
+                <p id="meteo-day4"></p>
+                <img id="meteo-image4" src="" alt="">
+                <p id="meteo-condition4"></p>
+            </div>
+        </div>
+    </div>
+
     <div class="main__container__article">
         <h4 class="main__container__article__title">Articles associes</h4>
 
