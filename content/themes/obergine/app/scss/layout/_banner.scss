@@ -10,7 +10,14 @@
     z-index: 1;
 
     &__container {
-        left: calc(100% / 2 - 261px);
+        
+        // mobile view
+        
+        padding-left: 1.5em;
+
+        //end
+
+        //left: calc(100% / 2 - 261px);
         position: absolute;
         top: 70%;
         transform: translateY(-50%);
