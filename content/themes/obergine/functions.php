@@ -12,6 +12,8 @@ require get_theme_file_path('inc/widget.php');
 require get_theme_file_path('inc/function-login.php');
 require get_theme_file_path('inc/email-cron.php');
 require get_theme_file_path('inc/newsletter-table.php');
+require get_theme_file_path('inc/single-product.php');
+
 
 
 
