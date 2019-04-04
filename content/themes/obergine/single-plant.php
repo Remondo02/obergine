@@ -143,32 +143,31 @@ if ( have_posts() ) :
                 <option value="toulouse">Toulouse</option>
                 <option value="toulon">Toulon</option>
                 <option value="tours">Tours</option>
-                
             </select>
             <input type="submit">
         </form>
-        <div class="d-flex">
-            <div id="meteo-info0 ml-5 p-5">
+        <div class="meteo">
+            <div class="meteo__info" id="meteo-info0 ml-5 p-5">
                 <p id="meteo-day0"></p>
                 <img id="meteo-image0" src="" alt="">
                 <p id="meteo-condition0"></p>
             </div>
-            <div id="meteo-info1 ml-5 p-5">
+            <div class="meteo__info" id="meteo-info1 ml-5 p-5">
                 <p id="meteo-day1"></p>
                 <img id="meteo-image1" src="" alt="">
                 <p id="meteo-condition1"></p>
             </div>
-            <div id="meteo-info2 ml-5 p-5">
+            <div class="meteo__info" id="meteo-info2 ml-5 p-5">
                 <p id="meteo-day2"></p>
                 <img id="meteo-image2" src="" alt="">
                 <p id="meteo-condition2"></p>
             </div>    
-            <div id="meteo-info3 ml-5 p-5">
+            <div class="meteo__info" id="meteo-info3 ml-5 p-5">
                 <p id="meteo-day3"></p>
                 <img id="meteo-image3" src="" alt="">
                 <p id="meteo-condition3"></p>
             </div>    
-            <div id="meteo-info4 ml-5 p-5">
+            <div class="meteo__info" id="meteo-info4 ml-5 p-5">
                 <p id="meteo-day4"></p>
                 <img id="meteo-image4" src="" alt="">
                 <p id="meteo-condition4"></p>
