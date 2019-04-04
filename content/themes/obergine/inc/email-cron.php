@@ -59,10 +59,9 @@ function isa_test_cron_job_send_mail() {
 
         if (!empty($item)) {
 
-            $message = 'Légumes et fruits à planter:' . $item;
             $to = $wp_user->user_email;
             $subject = 'Test my 3-minute cron job';
-            $message = 'If you received this message, it means that your 3-minute cron job has worked! <img draggable="false" class="emoji" alt="🙂" src="https://s.w.org/images/core/emoji/11.2.0/svg/1f642.svg"> ';
+            $message = 'Légumes et fruits à planter:' . $item;
             wp_mail( $to, $subject, $message );
         }
         
