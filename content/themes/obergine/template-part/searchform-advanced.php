@@ -63,10 +63,9 @@
 
     <select class="badge badge-light" name="place" id="place">        
         <option value=""><?php _e( 'Choisissez l\'emplacement' ,'textdomain' ); ?></option>
-        <option value="Extérieur"><?php _e( 'Extérieur', 'textdomain' ); ?></option>
         <option value="En pleine terre"><?php _e( 'En pleine terre', 'textdomain' ); ?></option>
-        <option value="Pépinière"><?php _e( 'Pépinière', 'textdomain' ); ?></option>
-        <option value="Sous-abri"><?php _e( 'Sous-abri', 'textdomain' ); ?></option>
+        <option value="Extérieur sous-abri"><?php _e( 'Extérieur sous-abri', 'textdomain' ); ?></option>
+        <option value="Semis à chaud ou intérieur"><?php _e( 'Semis à chaud ou intérieur', 'textdomain' ); ?></option>
     </select>
 
     <hr>

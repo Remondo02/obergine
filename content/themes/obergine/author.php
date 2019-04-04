@@ -2,7 +2,7 @@
 get_header();
 ?>
 <main class="main home-page">
-    <h2>Articles rédigés par <?php the_author(); ?>
+    <h2>Articles rédigés par <?php the_author(); ?></h2>
 <?php 
 if ( have_posts() ) :
     
