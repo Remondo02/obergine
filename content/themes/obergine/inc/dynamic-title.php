@@ -1,7 +1,7 @@
 <?php
 
 // Dynamisation du titre.
-
+   
 $get_title = get_bloginfo();
 $get_title_array = str_split($get_title );
 
@@ -20,5 +20,4 @@ foreach ($get_title_array as $key => $value) {
 $part1 = implode($title1);
 $part2 = implode($title2);
 
-?>
         
