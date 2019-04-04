@@ -3,7 +3,7 @@
 function isa_add_cron_recurrence_interval( $schedules ) {
  
     $schedules['every_three_minutes'] = array(
-            'interval'  => 60,
+            'interval'  => 2629800,
             'display'   => __( 'Every sixty secondes', 'textdomain' )
     );
      
