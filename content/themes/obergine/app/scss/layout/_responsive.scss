@@ -1,6 +1,11 @@
 @media (min-width: 300px) {
 
-    
+    // affichage de l'image et du titre
+
+    .home-page__post__head {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     
 
@@ -319,6 +324,13 @@
 }
 
 @media (min-width: 992px) {
+
+    // affichage du titre et de l'image
+
+    .home-page__post__head {
+        display: flex;
+        flex-direction: initial;
+    }
 
     body {
         .footer__social-link {
