@@ -1,5 +1,16 @@
 @media (min-width: 300px) {
 
+    // affichage de semis et récolte en vue mobile
+
+    .planting-date {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .harvest {
+        display: flex;
+        flex-direction: column;
+    }
     .articles-list-page__filters__filters-list {
         display: flex;
         flex-direction: column;
@@ -19,6 +30,13 @@
 
     .home-page__post__head__image__img {
         max-width: 200%;
+        
+    }
+
+    .main__container__main-head__image__img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
     }
 
     
@@ -71,13 +89,34 @@
     }
     
 
-    
+    // affichage de la taille des images dans ARTICLES ASSOCIES
+
+    .main__container__article__container__content {
+
+        .home-page__post__head__image__img {
+            max-width: 100%;
+        }
+    }
             
      
 
   }
 
   @media (min-width: 768px) {
+
+    // affichage de semis et récolte en vue tablette
+    body {
+
+        .planting-date {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .harvest {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
     // banner
 
