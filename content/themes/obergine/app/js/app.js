@@ -4,7 +4,7 @@ var app = {
   init: function() {
     console.log('init app');
 
-    app.homeUrl = 'http://92.243.16.243/potager-party/';
+    app.homeUrl = 'http://localhost/html/apotheose/potager-party/';
 
     if(document.URL === app.homeUrl + 'mon-compte/'){
       app.monCompte();
