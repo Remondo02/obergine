@@ -120,19 +120,39 @@ if ( have_posts() ) :
     </div>
 
     <div id="meteo" class="mt-3">
-        <h3 class="main__container__main-container__bot__content__title">Météo</h3>
-        <form action="" method="post" class="form-group">
+        <h3 class="main__container__main-container__bot__content__title">Prévoyer l'arrosage nécessaire suivant la météo de votre ville</h3>
+        <form action="" method="post" class="form-group" id="meteo-form">
             <label for="form_name">Votre ville : </label>
-            <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement">
+            <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement"  >
                 <option value="">Choisir votre ville</option>
+                <option value="avignon">Avignon</option>
+                <option value="bordeaux">Bordeaux</option>
+                <option value="caen">Caen</option>
+                <option value="grenoble">Grenoble</option>
                 <option value="lille">Lille</option>
                 <option value="lyon">Lyon</option>
                 <option value="paris">Paris</option>
                 <option value="marseille">Marseille</option>
+                <option value="montpellier">Montpellier</option>
+                <option value="nancy">Nancy</option>
+                <option value="nantes">Nantes</option>
+                <option value="nice">Nice</option>
+                <option value="rennes">Rennes</option>
+                <option value="rouen">Rouen</option>
+                <option value="strasbourg">Strasbourg</option>
+                <option value="toulouse">Toulouse</option>
+                <option value="toulon">Toulon</option>
+                <option value="tours">Tours</option>
+                
             </select>
             <input type="submit">
         </form>
         <div class="d-flex">
+            <div id="meteo-info0 ml-5 p-5">
+                <p id="meteo-day0"></p>
+                <img id="meteo-image0" src="" alt="">
+                <p id="meteo-condition0"></p>
+            </div>
             <div id="meteo-info1 ml-5 p-5">
                 <p id="meteo-day1"></p>
                 <img id="meteo-image1" src="" alt="">
