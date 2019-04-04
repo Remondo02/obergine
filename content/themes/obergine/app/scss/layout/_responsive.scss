@@ -71,7 +71,14 @@
     }
     
 
-    
+    // affichage de la taille des images dans ARTICLES ASSOCIES
+
+    .main__container__article__container__content {
+
+        .home-page__post__head__image__img {
+            max-width: 100%;
+        }
+    }
             
      
 
