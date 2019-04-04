@@ -159,6 +159,7 @@
 
 
 .input-group-text {
+    // margin: auto;
     border: 1px solid $color-primary;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -173,14 +174,18 @@
     &:focus {
         outline: none;
    }
+
+   .form-group {
+       margin: auto;
+   }
+   .text-white::before {
+       color: grey !important;
+   }
 }
 
 .header__header-bot__search-bar__form {
     display:flex;
-
-    // .fa-search {
-    //         :hover {
-    //             color: red;
-    //     }
-    // }
 }
+
+
+
