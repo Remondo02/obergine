@@ -26,7 +26,7 @@ function newsletter_plugin_setup_menu(){
           'Newsletter contacts', 
           'Newsletter', 
           'manage_options', 
-          'test-plugin', 
+          'newsletter-plugin', 
           'display_menu',
           'dashicons-email-alt',
           8
