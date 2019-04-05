@@ -1,5 +1,15 @@
 @media (min-width: 300px) {
 
+    // classe sur un autre navigateur que Chrome
+
+    .header__header-up__head__title__span-show {
+        color: white;
+    }
+
+    .other_navigator {
+        display: none;
+    }
+
     // logo du header
 
     .header__header-up__head__image {
@@ -127,6 +137,56 @@
 }
 
   @media (min-width: 768px) {
+
+    // affichage sous d'autres navigateurs que Chrome
+    body {
+
+        .other-nav {
+            display: none!important;
+        }
+    }
+        
+    .other_navigator {
+        display: initial;
+        font-weight: 600;
+        font-size: 1.1em;
+        color: $color-primary;
+    }
+
+    //header woocommerce
+
+    .page-template-default {
+        
+        // logo du header
+
+        .header__header-up__head__image {
+            display: initial;
+            width: 5%;
+            height: 1.7em;
+
+            
+        }
+        .header__header-up__head__title__span {
+            display: none;
+        }
+
+        // Logo sous un autre navigateur que Chrome
+
+        .header__header-up__head__title__span-show {
+            color: $color-primary;
+            font-weight: 600;
+        }
+        
+
+        .header__header-up__head {
+
+            a {
+                display: flex;
+                justify-content: center;
+
+            }
+        }
+    }
 
     // logo du header
 

@@ -22,12 +22,26 @@
         <?php
         // Dynamic-title
         require get_theme_file_path('inc/dynamic-title.php');
+
+        
+        // Browser Detection
+
+        if(preg_match('/Chrome/i',$_SERVER['HTTP_USER_AGENT'])){
+            
+            $nav = 'chrome-nav';
+            $nav2 = 'span';
+         } else {
+             $nav = 'other-nav';
+             $nav2 = 'span-show';
+         }
+
+
         ?>
 
         
         <div class="header__header-up__head">
             
-            <a href="<?php echo home_url(); ?>"><img class="header__header-up__head__image" src="http://localhost/apotheose/wordpress/obergine/potager-party/content/uploads/2019/04/logo_vert_clean_sans_titre_png-1.png" alt=""><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__span"><?= $part1; ?></span><?= $part2; ?></h1></a>
+            <a href="<?php echo home_url(); ?>"><img class="header__header-up__head__image <?= $nav ?>" src="http://localhost/apotheose/wordpress/obergine/potager-party/content/uploads/2019/04/logo_vert_clean_sans_titre_png-1.png" alt=""><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__<?= $nav2 ?>"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
 
 
