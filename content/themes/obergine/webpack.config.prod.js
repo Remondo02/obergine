@@ -9,14 +9,17 @@ const CopyPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 let config = {
-  entry: [
-    './app/js/app.js',
-    './app/scss/main.scss',
-  ],
+  entry: {
+    app: './app/js/app.js',
+    burger: './app/js/burger.js',
+    rellax: './app/js/rellax.js',
+    meteo: './app/js/meteo.js',
+    main: './app/scss/main.scss'
+  },
   mode: 'production',
   output: {
     path: path.resolve(__dirname, "./public"),
-    filename: "js/app.js"
+    filename: "js/[name].js"
   },
   optimization: {
     minimizer: [

@@ -1,4 +1,6 @@
-<main class="main articles-list-page">
+<!-- <main class="main articles-list-page"> -->
+
+    
 
 <!-- <section class="articles-list-page__filters">
     <div class="articles-list-page__filters__filters-list">
@@ -21,7 +23,7 @@
 
 </section>  -->
 
-<section class="articles-list-page__main">
+<!-- <section class="articles-list-page__main"> -->
 
     
     <div class="home-page__group">
@@ -40,7 +42,7 @@
                 <div class="home-page__post__head__content">
                     <div class="home-page__post__head__content__head">
                         <h2 class="home-page__post__head__content__head__product"><?php the_title(); ?></h2>
-                        <span class="home-page__post__head__content__head__family">Famille</span>
+                        <span class="home-page__post__head__content__head__family"><?php the_field('famille'); ?></span>
                     </div>
                     
                 </div>
@@ -52,16 +54,17 @@
                 </div>
                 
                 <div class="home-page__post__main__link">
-                    <a href="<?php get_post_permalink(); ?>" class="home-page__post__main__link__read-more">Lire la suite <i class="fa fa-envira" aria-hidden="true"></i></a>
+                    <a href="<?php the_permalink(); ?>" class="home-page__post__main__link__read-more">Lire la suite <i class="fa fa-envira" aria-hidden="true"></i></a>
                 </div>
             </div>
+        </div>
         
     </div>
-</section>
+<!-- </section> -->
     
     
     
     
     
     
-</main>
+<!-- </main> -->

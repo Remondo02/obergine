@@ -1,9 +1,223 @@
 <?php
 get_header();
-?>
 
-<p>Template de la page plantes potagères (CPT)</p>
+
+if ( have_posts() ) :
+    
+    the_post();
+    ?>
+
+<main class="main">
+    <div class="main__container">
+
+        <div class="main__container__main-head">
+            <div class="main__container__main-head__top">
+            <div class="main__container__main-head__top__header">
+            <h2 class="main__container__main-head__top__header__title"><?php the_title(); ?></h2>
+
+            <div class="main__container__main-head__top__header__button">
+
+                <!-- modif en cours -->
+                <!-- <button class="main__container__main-head__top__header__button__fav">Ajouter en favoris <i class="main__container__main-head__top__header__fav__icone fa fa-thumbs-up" aria-hidden="true"></i></button> -->
+
+                <?php the_favorites_button();
+
+                // $usermeta = get_user_meta(get_current_user_id());
+                // echo '<pre>';
+                // var_dump($usermeta);
+                ?>
+                 <button class="main__container__main-head__top__header__button__buy"> <a class="main__container__main-head__top__header__button__buy" href='<?php the_field('url_produit'); ?>'>Ajouter au panier <i class="main__container__main-head__top__header__buy__icone fa fa-shopping-cart" aria-hidden="true"></i></a></button>
+            
+            </div>
+
+            </div>
+            <span class="main__container__main-head__top__category"><?php the_field('famille'); ?></span>
+        </div>
+
+        <div class="main__container__main-head__image">
+            <?php the_post_thumbnail( 'post-thumbnail', [ 'class' => 'main__container__main-head__image__img img-highlighting-post-page' ] ); ?>
+        </div>
+
+        <div class="main__container__main-head__top__bot">
+            <h3 class="main__container__main-head__top__bot__title">Description</h3>
+            <p class="main__container__main-head__top__bot__text"><?php the_content(); ?></p>
+
+        </div>
+    </div>
+
+    <div class="main__container__main-container">
+        <div class="main__container__main-container__top">
+            
+
+            <div class="main__container__main-container__top__content water">
+                <span class="main__container__main-container__top__content__span water">Eau :</span>
+                <div class="main__container__main-container__top__content__icones water">
+
+                    <i><?php the_field('besoin_en_eau'); ?></i>
+                   
+                </div>
+            </div>
+
+            
+
+            <div class="main__container__main-container__top__content planting-date">
+                <span class="main__container__main-container__top__content__span planting-date">Semis/plantation :</span>
+                <div class="main__container__main-container__top__content__icones planting-date">
+                    <?php the_field('mois_de_semis'); ?>
+                    
+                </div>
+            </div>
+
+            <div class="main__container__main-container__top__content harvest">
+                <span class="main__container__main-container__top__content__span harvest">Récolte :</span>
+                <div class="main__container__main-container__top__content__icones harvest">
+                    
+                    <?php the_field('mois_de_recolte'); ?>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="main__container__main-container__bot">
+            <div class="main__container__main-container__bot__content">
+                <h3 class="main__container__main-container__bot__content__title">Espacement des pieds</h3>
+                <span class="main__container__main-container__bot__content__span"></span>
+                <div class="main__container__main-container__bot__content__text">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <div class="mb-2">
+                        <?php the_field('espacement_des_pieds'); ?>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="main__container__main-container__bot__content">
+                <h3 class="main__container__main-container__bot__content__title">Difficulté</h3>
+                <span class="main__container__main-container__bot__content__span"></span>
+                <div class="main__container__main-container__bot__content__text">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <div class="mb-2">
+
+                        <?php the_field('difficulte'); ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__container__main-container__bot__content">
+                <h3 class="main__container__main-container__bot__content__title">Type</h3>
+                <span class="main__container__main-container__bot__content__span"></span>
+                <div class="main__container__main-container__bot__content__text">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <div class="mb-2">
+                        <?php the_field('type'); ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="meteo" class="mt-3">
+        <h3 class="main__container__main-container__bot__content__title">Prévoyer l'arrosage nécessaire suivant la météo de votre ville</h3>
+        <form action="" method="post" class="form-group" id="meteo-form">
+            <label for="form_name">Votre ville : </label>
+            <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement"  >
+                <option value="">Choisir votre ville</option>
+                <option value="avignon">Avignon</option>
+                <option value="bordeaux">Bordeaux</option>
+                <option value="caen">Caen</option>
+                <option value="grenoble">Grenoble</option>
+                <option value="lille">Lille</option>
+                <option value="lyon">Lyon</option>
+                <option value="paris">Paris</option>
+                <option value="marseille">Marseille</option>
+                <option value="montpellier">Montpellier</option>
+                <option value="nancy">Nancy</option>
+                <option value="nantes">Nantes</option>
+                <option value="nice">Nice</option>
+                <option value="rennes">Rennes</option>
+                <option value="rouen">Rouen</option>
+                <option value="strasbourg">Strasbourg</option>
+                <option value="toulouse">Toulouse</option>
+                <option value="toulon">Toulon</option>
+                <option value="tours">Tours</option>
+                <option value="grivegnee-liege">Liège en Belgique pour Julien</option>
+            </select>
+            <input type="submit">
+        </form>
+        <div class="meteo">
+            <div class="meteo__info" id="meteo-info0 ml-5 p-5">
+                <p id="meteo-day0"></p>
+                <img id="meteo-image0" src="" alt="">
+                <p id="meteo-condition0"></p>
+            </div>
+            <div class="meteo__info" id="meteo-info1 ml-5 p-5">
+                <p id="meteo-day1"></p>
+                <img id="meteo-image1" src="" alt="">
+                <p id="meteo-condition1"></p>
+            </div>
+            <div class="meteo__info" id="meteo-info2 ml-5 p-5">
+                <p id="meteo-day2"></p>
+                <img id="meteo-image2" src="" alt="">
+                <p id="meteo-condition2"></p>
+            </div>    
+            <div class="meteo__info" id="meteo-info3 ml-5 p-5">
+                <p id="meteo-day3"></p>
+                <img id="meteo-image3" src="" alt="">
+                <p id="meteo-condition3"></p>
+            </div>    
+            <div class="meteo__info" id="meteo-info4 ml-5 p-5">
+                <p id="meteo-day4"></p>
+                <img id="meteo-image4" src="" alt="">
+                <p id="meteo-condition4"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__container__article">
+        <h4 class="main__container__article__title">Articles associes</h4>
+
+        <div class="main__container__article__container mb-5">
+
+            <?php
+                $last_post_query = new WP_Query([
+                'post_type'         => Custom_Post_Type_Plant::POST_TYPE,
+                'posts_per_page'    => 4,
+                'orderby'           => 'rand',
+                'order'             => 'DESC',
+                //'post__in'          => $id,
+            ]);
+
+
+            if ( $last_post_query->have_posts() ) :
+                
+                while ( $last_post_query->have_posts() ) :        
+                    $last_post_query->the_post();
+                    
+                    get_template_part(
+                        'template-part/content/articles',
+                        'list'
+                    );
+                    
+                    
+                endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
+        </div>
+    </div>
+
+</div>
+
+    
+</main>
+
+
+
 
 <?php
+endif;
 get_footer();
-?>
+

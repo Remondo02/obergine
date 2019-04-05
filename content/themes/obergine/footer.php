@@ -7,16 +7,15 @@
     </nav>
 
     <div class="footer__social-link">
-        <i class="fa fa-facebook-f"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
+    <?php dynamic_sidebar( 'new-social-widget-area') ; ?>
     </div>
 
     <div class="footer__newsletter">
         <span class="footer__newsletter__span">Abonnez-vous à la newsletter</span>
-        <?php
-            echo do_shortcode( '[contact-form-7 id="297" title="Contact form Newsletter" html_class="form"]' );
-        ?>
+        <form method="post" action="" class="footer__newsletter__form">
+            <input class="footer__newsletter__form__input" type="email" name="email_newsletter" placeholder="Votre email" required>
+            <button><i class="fa fa-check" aria-hidden="true"></i></button>
+        </form>
     </div>
 
         

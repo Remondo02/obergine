@@ -10,6 +10,7 @@
 /content/plugins/*
 !/content/plugins/obergine-settings
 !/content/plugins/obergine-banner
+!/content/plugins/obergine-newsletter
 
 /content/themes/*
 !/content/themes/obergine

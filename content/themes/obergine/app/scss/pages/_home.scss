@@ -11,8 +11,6 @@
         margin-bottom: $gutter-smale;
         padding-bottom: $gutter-smale;
         border-bottom: 1px solid $color-border-primary;
-        // margin-left: $gutter-smale;
-        // margin-right: $gutter-smale;
 
         &:last-child {
             border-bottom: none;
@@ -32,7 +30,9 @@
                 &__img {
                     padding-top: $gutter-smale;
                     padding-left: $gutter-smale;
-                    max-width: 100%;
+                    //max-width: 100%;
+                    
+                    height: auto;
                 }
             }
             
@@ -84,7 +84,7 @@
                         background-color: $color-title-primary;
                         color: white;
                         text-decoration: none;
-                        border-radius: 10px;
+                        
                     }
                     
                     &__read-more {
