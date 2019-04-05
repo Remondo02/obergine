@@ -43,9 +43,9 @@ get_header();
                             <label for="form_email">Sujet </label>
                             <Select id="form_email" name="subject-contact" class="form-control">
                                 <option value="" selected disabled hidden>Choisissez le sujet de votre demande</option>
-                                <option value="ajout">Ajout d'une plante</option>
-                                <option value="autre">Autre demande</option>
-                                <option value="commande">Problème de commande</option>
+                                <option value="Ajout d'une plante">Ajout d'une plante</option>
+                                <option value="Autre demande">Autre demande</option>
+                                <option value="Problème de commande">Problème de commande</option>
                             </Select>
                             <div class="help-block with-errors"></div>
                         </div>
