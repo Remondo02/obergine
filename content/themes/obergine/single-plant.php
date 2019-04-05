@@ -174,6 +174,12 @@ if ( have_posts() ) :
                 <p id="meteo-condition4"></p>
             </div>
         </div>
+
+        
+    </div>
+
+    <div class="main__container__main-container__back-to-home back-to-home-container">
+        <a class="main__container__main-container__back-to-home__link back-to-home-container-link" href="<?= get_option('home'); ?>" class="main__container__main-container__back-to-home__link">Retourner à l'accueil <i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
 
     <div class="main__container__article">
@@ -207,7 +213,9 @@ if ( have_posts() ) :
             wp_reset_postdata();
             ?>
         </div>
+        
     </div>
+
 
 </div>
 

@@ -46,6 +46,15 @@
                     &__title {
                         font-size: 1.5em;
                         font-weight: 600;
+
+                        &__link {
+                            color: black;
+
+                            &:hover {
+                                color: $color-title-secondary;
+                                text-decoration-line: none;
+                            }
+                        }
                     }
                     
                     &__author {
@@ -102,4 +111,10 @@
                 
             
     }
+}
+
+.back-to-home-container-home-page {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
 }
