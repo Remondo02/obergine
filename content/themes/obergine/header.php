@@ -31,8 +31,48 @@
 
 
         <div class="header__header-up__log">
+
+        <!-- Show cart contents  -->
+            <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+    
+                $count = WC()->cart->cart_contents_count;
+                    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+                        if ( $count > 0 ) {
+                            ?>
+                            <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                    <?php
+                                    }
+                    ?></a>
+
+            <?php } ?>
+
+
+            <?php
+            function my_header_add_to_cart_fragment( $fragments ) {
+            
+                ob_start();
+                    $count = WC()->cart->cart_contents_count;
+                    ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+                    if ( $count > 0 ) {
+                        ?>
+                        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                        <?php            
+                    }
+                        ?></a><?php
+
+                    $fragments['a.cart-contents'] = ob_get_clean();
+                    
+                    return $fragments;
+                }
+                add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+            ?>
+              <!-- Navigation Panier et Mon compte  -->
+
             <a class="header__header-up__log__link" href="<?php echo home_url() . '/panier'; ?>"><i class="fa fa-shopping-basket"></i></a>
             <a class="header__header-up__log__link" href="<?php echo home_url() . '/mon-compte'; ?>"><i class="fa fa-user"></i></a>
+
+            
+
         </div>
 
         <!-- Navigation menu burger -->
