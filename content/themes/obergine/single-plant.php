@@ -123,12 +123,12 @@ if ( have_posts() ) :
         <h4 class="main__container__article__title">Météo</h4>
 
         <div class="searchContainer">
-            <h1>Search Github Users</h1>
-            <p class="lead">Enter a username to fetch a users profile info and repos</p>
-            <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
+            <h1>Recherche une ville</h1>
+            <p class="lead">Entrez un nom de ville et récupérez les dernières infos météo</p>
+            <input type="text" id="searchWeather" class="form-control" placeholder="Votre ville...">
         </div>
         <br>
-        <div id="profile">
+        <div id="weather">
         </div>
         
     </div>
