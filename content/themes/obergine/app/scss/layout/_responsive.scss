@@ -1,5 +1,11 @@
 @media (min-width: 300px) {
 
+    // logo du header
+
+    .header__header-up__head__image {
+        display: none;
+    }
+
     // affichage des favoris dans la page mon compte 
 
     .fav-bot {
@@ -121,6 +127,32 @@
 }
 
   @media (min-width: 768px) {
+
+    // logo du header
+
+    .header__header-up__head__image {
+        display: initial;
+        width: 100%;
+        height: 1.7em;
+
+        
+    }
+    .header__header-up__head__title__span {
+        display: none;
+    }
+
+    .header__header-up__head {
+
+        a {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+    
+    
+    
 
     // file d'ariane 
 

@@ -188,10 +188,10 @@
     display:flex;
 }
 
-// file d'ariane 
+// logo 
 
-[aria-current] {
-    text-decoration: underline $color-primary;
+.header__header-up__head__image {
+    max-width: 5%;
+    height: auto;
 }
-
 
