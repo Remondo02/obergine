@@ -106,3 +106,18 @@ main {
 
     
 }
+
+// compteur du panier 
+
+.cart-contents-count {
+    padding-right: .5em;
+    color: white;
+
+    
+}
+
+.cart-contents {
+    &:hover {
+        text-decoration-line: none;
+    }
+}
