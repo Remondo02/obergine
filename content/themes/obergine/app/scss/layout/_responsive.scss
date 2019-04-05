@@ -1,5 +1,22 @@
 @media (min-width: 300px) {
 
+    // logo du header
+
+    .header__header-up__head__image {
+        display: none;
+    }
+
+    // affichage des favoris dans la page mon compte 
+
+    .fav-bot {
+        max-width: 70%;
+        margin-left: $gutter-smale;
+        
+        >ul {
+            
+        }
+    }
+
     // affichage de semis et récolte en vue mobile
 
     .planting-date {
@@ -102,7 +119,67 @@
 
   }
 
+  // file d'ariane 
+
+  [aria-current] {
+    text-decoration-line: none;
+    
+}
+
   @media (min-width: 768px) {
+
+    // logo du header
+
+    .header__header-up__head__image {
+        display: initial;
+        width: 100%;
+        height: 1.7em;
+
+        
+    }
+    .header__header-up__head__title__span {
+        display: none;
+    }
+
+    .header__header-up__head {
+
+        a {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+    
+    
+    
+
+    // file d'ariane 
+
+    [aria-current] {
+        text-decoration: underline $color-primary;
+        text-underline-position: under;
+        
+    }
+
+
+    // affichage des favoris dans la page mon compte 
+
+    .fav-bot {
+        max-width: 25%;
+    }
+
+    // affichage du compteur d'achat
+
+    
+    .cart-contents-count {
+        color: $color-primary;
+        font-weight: 600;
+        padding-right: 1em;
+        font-size: 1.3em;
+        
+        
+    }
 
     // affichage de semis et récolte en vue tablette
     body {
