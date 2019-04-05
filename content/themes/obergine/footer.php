@@ -13,7 +13,7 @@
     <div class="footer__newsletter">
         <span class="footer__newsletter__span">Abonnez-vous à la newsletter</span>
         <form method="post" action="" class="footer__newsletter__form">
-            <input class="footer__newsletter__form__input" type="email" name="email" placeholder="Votre email" required>
+            <input class="footer__newsletter__form__input" type="email" name="email_newsletter" placeholder="Votre email" required>
             <button><i class="fa fa-check" aria-hidden="true"></i></button>
         </form>
     </div>

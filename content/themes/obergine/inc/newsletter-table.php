@@ -35,9 +35,9 @@ function obergine_newsletter_table_insert() {
 
     $myrows = $wpdb->get_results( "SELECT mail FROM wp_newsletter_table" );
 
-    if(!empty($_POST['email'])){
+    if(!empty($_POST['email_newsletter'])){
 
-        $email = $_POST['email'];
+        $email = $_POST['email_newsletter'];
     
         $userNewsletterMail = [];
         foreach($myrows as $userNewsletter){
