@@ -119,61 +119,18 @@ if ( have_posts() ) :
         </div>
     </div>
 
-    <div id="meteo" class="mt-3">
-        <h3 class="main__container__main-container__bot__content__title">Prévoyer l'arrosage nécessaire suivant la météo de votre ville</h3>
-        <form action="" method="post" class="form-group" id="meteo-form">
-            <label for="form_name">Votre ville : </label>
-            <select class="badge badge-light" name="meteo-emplacement" id="meteo-emplacement"  >
-                <option value="">Choisir votre ville</option>
-                <option value="avignon">Avignon</option>
-                <option value="bordeaux">Bordeaux</option>
-                <option value="caen">Caen</option>
-                <option value="grenoble">Grenoble</option>
-                <option value="lille">Lille</option>
-                <option value="lyon">Lyon</option>
-                <option value="paris">Paris</option>
-                <option value="marseille">Marseille</option>
-                <option value="montpellier">Montpellier</option>
-                <option value="nancy">Nancy</option>
-                <option value="nantes">Nantes</option>
-                <option value="nice">Nice</option>
-                <option value="rennes">Rennes</option>
-                <option value="rouen">Rouen</option>
-                <option value="strasbourg">Strasbourg</option>
-                <option value="toulouse">Toulouse</option>
-                <option value="toulon">Toulon</option>
-                <option value="tours">Tours</option>
-                <option value="grivegnee-liege">Liège en Belgique pour Julien</option>
-            </select>
-            <input type="submit">
-        </form>
-        <div class="meteo">
-            <div class="meteo__info" id="meteo-info0 ml-5 p-5">
-                <p id="meteo-day0"></p>
-                <img id="meteo-image0" src="" alt="">
-                <p id="meteo-condition0"></p>
-            </div>
-            <div class="meteo__info" id="meteo-info1 ml-5 p-5">
-                <p id="meteo-day1"></p>
-                <img id="meteo-image1" src="" alt="">
-                <p id="meteo-condition1"></p>
-            </div>
-            <div class="meteo__info" id="meteo-info2 ml-5 p-5">
-                <p id="meteo-day2"></p>
-                <img id="meteo-image2" src="" alt="">
-                <p id="meteo-condition2"></p>
-            </div>    
-            <div class="meteo__info" id="meteo-info3 ml-5 p-5">
-                <p id="meteo-day3"></p>
-                <img id="meteo-image3" src="" alt="">
-                <p id="meteo-condition3"></p>
-            </div>    
-            <div class="meteo__info" id="meteo-info4 ml-5 p-5">
-                <p id="meteo-day4"></p>
-                <img id="meteo-image4" src="" alt="">
-                <p id="meteo-condition4"></p>
-            </div>
+    <div class="main__container__article">
+        <h4 class="main__container__article__title">Météo</h4>
+
+        <div class="searchContainer">
+            <h1>Search Github Users</h1>
+            <p class="lead">Enter a username to fetch a users profile info and repos</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
         </div>
+        <br>
+        <div id="profile">
+        </div>
+        
     </div>
 
     <div class="main__container__article">
