@@ -143,6 +143,7 @@ if ( have_posts() ) :
                 <option value="toulouse">Toulouse</option>
                 <option value="toulon">Toulon</option>
                 <option value="tours">Tours</option>
+                <option value="grivegnee-liege">Liège en Belgique pour Julien</option>
             </select>
             <input type="submit">
         </form>
