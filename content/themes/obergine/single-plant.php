@@ -123,7 +123,7 @@ if ( have_posts() ) :
         <h4 class="main__container__article__title">Météo</h4>
 
         <div class="searchContainer">
-            <h1>Recherche une ville</h1>
+            <h1>Rechercher une ville</h1>
             <p class="lead">Entrez un nom de ville et récupérez les dernières infos météo</p>
             <input type="text" id="searchWeather" class="form-control" placeholder="Votre ville...">
         </div>
