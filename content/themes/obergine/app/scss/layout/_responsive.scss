@@ -1,5 +1,16 @@
 @media (min-width: 300px) {
 
+    // affichage des favoris dans la page mon compte 
+
+    .fav-bot {
+        max-width: 70%;
+        margin-left: $gutter-smale;
+        
+        >ul {
+            
+        }
+    }
+
     // affichage de semis et récolte en vue mobile
 
     .planting-date {
@@ -103,6 +114,12 @@
   }
 
   @media (min-width: 768px) {
+
+    // affichage des favoris dans la page mon compte 
+
+    .fav-bot {
+        max-width: 25%;
+    }
 
     // affichage du compteur d'achat
 
