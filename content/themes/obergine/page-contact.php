@@ -9,13 +9,16 @@ get_header();
             echo do_shortcode( '[contact-form-7 id="230" title="Contact form" html_class="form"]' );
             ?>
             
-            <a href="<?php echo home_url(); ?>" class="contact__container__link back-home-link">Retour à l'accueil</a>
         </div>
     </div>
     
   
    
 </main>
+
+<div class="back-to-home-container back-to-home-container-home-page back-to-home-container-archive-plant">
+    <a class="back-to-home-container-link" href="<?= home_url(); ?>" class="main__container__main-container__back-to-home__link">Retourner à l'accueil <i class="fa fa-home" aria-hidden="true"></i></a>
+</div>
 
 <?php
 get_footer();
