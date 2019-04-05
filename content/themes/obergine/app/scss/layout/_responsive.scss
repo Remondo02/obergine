@@ -104,6 +104,18 @@
 
   @media (min-width: 768px) {
 
+    // affichage du compteur d'achat
+
+    
+    .cart-contents-count {
+        color: $color-primary;
+        font-weight: 600;
+        padding-right: 1em;
+        font-size: 1.3em;
+        
+        
+    }
+
     // affichage de semis et récolte en vue tablette
     body {
 
