@@ -5,9 +5,6 @@ Author: La team des AS
 Version: 1.0
 */
 
-
-
-
 // Function pour récupérer les e-mails dans la BDD
 function obergine_newsletter_table_selection() {
 
@@ -17,9 +14,7 @@ function obergine_newsletter_table_selection() {
 
     $userNewsletterMail = [];
     foreach($myrows as $userNewsletter){
-        echo '<ul>';
-        echo '<li>' . $userNewsletter->mail . '</li>';
-        echo '<ul>';
+        echo '<li class="newsletter-mail">' . $userNewsletter->mail . '</li>';
     }
 }
 
@@ -42,13 +37,27 @@ function newsletter_plugin_setup_menu(){
 function display_menu(){
 
       ?>
-      <h3 class="newsletter-title">Voici les incriptions à la newsletter</h3>
-
+      <style type=text/css>
+      .newsletter {
+          margin: 1rem 3rem;
+      }
+      .newsletter-title {
+        padding-bottom: 1rem;
+        border-bottom: 2px dotted black;
+      }
+      </style>
+      <div class="newsletter">
+        <h3 class="newsletter-title">Voici les incriptions reçues à la newsletter</h3>
+        <ul class="newsletter-ul">
+            <?php
+            obergine_newsletter_table_selection();
+            ?>
+        </ul>
+      </div>
       <?php
-      obergine_newsletter_table_selection();
 
 }
-?>
+
 
 
 
