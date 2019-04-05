@@ -35,7 +35,7 @@ return $validation_errors;
 }
 
 
-add_action('woocommerce_register_post', 'woocom_validate_extra_register_fields', 10, 2);
+add_action('woocommerce_register_post', 'woocom_validate_extra_register_fields', 10, 3);
 
 
 
