@@ -113,7 +113,23 @@
 
   }
 
+  // file d'ariane 
+
+  [aria-current] {
+    text-decoration-line: none;
+    
+}
+
   @media (min-width: 768px) {
+
+    // file d'ariane 
+
+    [aria-current] {
+        text-decoration: underline $color-primary;
+        text-underline-position: under;
+        
+    }
+
 
     // affichage des favoris dans la page mon compte 
 

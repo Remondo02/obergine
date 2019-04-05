@@ -109,6 +109,8 @@
         </div>
     </div>
 
+   
+
     <div class="header__header-bot mobile-hide">
         <div class="header__header-bot__search-bar">
             <form class="header__header-bot__search-bar__form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -116,8 +118,7 @@
             <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
             <button class="input-group-text" type="submit" id="searchsubmit"><i class="form-group fa fa-search text-white"
         aria-hidden='true'></i></button>
-                <!-- <input class="header__header-bot__search-bar__form__input" type="search" placeholder="Search" aria-label="Search" > -->
-                <!-- <input class="border-0 bg-muted rounded text-light" type="submit" id="searchsubmit" value="Search" /> -->
+                
 
             </form>
         </div>

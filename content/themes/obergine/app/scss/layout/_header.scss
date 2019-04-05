@@ -142,6 +142,7 @@
                         
                     }
                     
+                    
                     >a {
                         padding: 0.5em;
                         color: black;
@@ -187,5 +188,10 @@
     display:flex;
 }
 
+// file d'ariane 
+
+[aria-current] {
+    text-decoration: underline $color-primary;
+}
 
 
