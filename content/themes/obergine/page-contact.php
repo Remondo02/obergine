@@ -65,9 +65,6 @@ get_header();
                 </div>
             </div>
         </form>
-   
-
-    <a href="#" class="contact__container__link back-home-link">Retour à l'accueil</a>
 </div>
 
 

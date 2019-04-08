@@ -6,12 +6,12 @@ Version: 1.0
 */
 
 // Function pour supprimer un utilisateur
-if(!empty($_POST[id])) {
+if(!empty($_POST['id-contact'])) {
 
 
-      $id = $_POST[id];
+      $idContact = $_POST['id-contact'];
       
-      $wpdb->delete( 'wp_contact_table' , array( 'id' => $id ) );
+      $wpdb->delete( 'wp_contact_table' , array( 'id' => $idContact ) );
       
 
   }
@@ -33,7 +33,7 @@ function obergine_contact_table_selection() {
 
     foreach($myrows as $userContact){
 
-        $id = $userContact->id;
+        $idContact = $userContact->id;
         echo '<tr class="contact-table-row">';
         echo '<td>' . $userContact->name . '</td>';
         echo '<td>' . $userContact->surname . '</td>';
@@ -42,7 +42,7 @@ function obergine_contact_table_selection() {
         echo '<td>' . $userContact->message .'</td>';
         echo '<td class="contact-button"><a class="contact-response" href="mailto:' . $userContact->mail . '">Répondre</a> 
         <form method="post" action="'. $_SERVER['PHP_SELF']. '?page=contact-form-plugin'. '">
-          <input type="hidden" name="id" value="'.$id.'">
+          <input type="hidden" name="id-contact" value="'.$idContact.'">
           <input type="submit" class="contact-delete" name="select" value="Supprimer la demande" />
         </form>';
         echo '</tr>';

@@ -37,13 +37,14 @@ function obergine_contact_table_insert() {
 
     $contact_table_name = $wpdb->prefix . 'contact_table';
 
-    $nameContact = $_POST['name-contact'];
-    $surnameContact = $_POST['surname-contact'];
-    $emailContact = $_POST['email-contact'];
-    $subjectContact = $_POST['subject-contact'];
-    $messageContact = $_POST['message-contact'];
+    
 
     if(!empty($_POST['name-contact'])){
+        $nameContact = $_POST['name-contact'];
+        $surnameContact = $_POST['surname-contact'];
+        $emailContact = $_POST['email-contact'];
+        $subjectContact = $_POST['subject-contact'];
+        $messageContact = $_POST['message-contact'];
         echo 'Nous avons bien reçu votre demande';
             $wpdb->insert(
                 'wp_contact_table',
