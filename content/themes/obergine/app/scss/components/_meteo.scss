@@ -1,14 +1,13 @@
+.card:last-child {
+    margin-bottom:2rem;
+}
 .temp-header {
     margin: auto 0;
 }
-
 .temp-button {
         margin:.5rem 0;
         max-width: 135px;
 }
-
-
-
 .weather-days-container {
     display: flex;
     flex-wrap: wrap;
@@ -30,4 +29,3 @@
             }   
     }
 }
-
