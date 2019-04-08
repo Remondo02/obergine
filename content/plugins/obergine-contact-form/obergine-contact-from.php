@@ -5,6 +5,31 @@ Author: La team des AS
 Version: 1.0
 */
 
+// Style CSS
+
+add_action( 'admin_print_styles' , 'obergine_contact_form_admin_style' );
+  
+function obergine_contact_form_admin_style() {
+  
+  wp_enqueue_style(
+    'obergine_contact-form_plugin_style',
+    plugins_url('obergine-contact-form/css/style.css')
+  );
+}
+
+// JS
+
+add_action( 'admin_enqueue_scripts', 'obergine_contact_form_admin_script' );
+
+function obergine_contact_form_admin_script(){
+
+  wp_enqueue_script(
+    'obergine_contact-form_plugin_script',
+    plugins_url('obergine-contact-form/js/app.js')
+  );
+
+}
+
 // Function pour supprimer un utilisateur
 if(!empty($_POST['id-contact'])) {
 
@@ -14,15 +39,7 @@ if(!empty($_POST['id-contact'])) {
       $wpdb->delete( 'wp_contact_table' , array( 'id' => $idContact ) );
       
 
-  }
-
-      
-
-      
-  
-      
-  
-
+}
 
 // Function pour récupérer les e-mails dans la BDD
 function obergine_contact_table_selection() {
@@ -68,71 +85,7 @@ function contact_form_plugin_setup_menu(){
 }
 
 function display_infos(){
-
-      ?>
-        <style type=text/css>
-        .contact {
-            margin: 1rem 3rem;
-        }
-        .contact-title {
-          padding-bottom: 1rem;
-          border-bottom: 2px dotted black;
-        }
-        .contact-table {
-          border: 1px solid black;
-          border-collapse: collapse;
-          min-width: 100%;
-          max-width: 100%;
-          text-align: center;
-          vertical-align: center;
-        }
-        td {
-          border: 1px solid black;
-          padding: .1rem;
-          height: 2rem;
-        }
-        tr:hover {
-          background-color: #f8f8f8;
-        }
-        .contact-message {
-          width: 60%;
-        }
-        thead {
-          font-weight: bold;
-          font-size: .9rem;
-          padding: 5rem;
-        }
-        .contact-response {
-          text-decoration: none;
-          font-size: .8rem;
-          color: white;
-          background-color: green;
-          border-radius: 1.3rem;
-          padding: .2rem;
-        }
-        
-        .contact-delete {
-          font-size: .8rem;
-          margin: .3rem;
-          background-color: red;
-          color: white;
-          border-radius: 1.3rem;
-          padding: .2rem;
-          text-decoration: none;
-        }
-        .contact-delete:hover, .contact-response:hover {
-              color: white;
-            }
-        .contact-button {
-          min-width: 30%;
-          width: 30%;
-        }
-        .title-delete {
-          margin: 1rem 6rem;
-        }
-        
-        </style>
-        
+?>  
       <div class="contact">
         <h3 class="contact-title">Voici les demandes :</h3>
           <table class="contact-table">

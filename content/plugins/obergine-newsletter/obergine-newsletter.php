@@ -5,6 +5,31 @@ Author: La team des AS
 Version: 1.0
 */
 
+// Style CSS
+
+add_action( 'admin_print_styles' , 'obergine_newsletter_admin_style' );
+  
+function obergine_newsletter_admin_style() {
+  
+  wp_enqueue_style(
+    'obergine_newsletter_plugin_style',
+    plugins_url('obergine-newsletter/css/style.css')
+  );
+}
+
+// JS
+
+add_action( 'admin_enqueue_scripts', 'obergine_newsletter_admin_script' );
+
+function obergine_newsletter_admin_script(){
+
+  wp_enqueue_script(
+    'obergine_newsletter_plugin_script',
+    plugins_url('obergine-newsletter/js/app.js')
+  );
+
+}
+
 // Function pour récupérer les e-mails dans la BDD
 function obergine_newsletter_table_selection() {
 
@@ -37,15 +62,7 @@ function newsletter_plugin_setup_menu(){
 function display_menu(){
 
       ?>
-      <style type=text/css>
-      .newsletter {
-          margin: 1rem 3rem;
-      }
-      .newsletter-title {
-        padding-bottom: 1rem;
-        border-bottom: 2px dotted black;
-      }
-      </style>
+
       <div class="newsletter">
         <h3 class="newsletter-title">Voici les incriptions reçues à la newsletter</h3>
         <ul class="newsletter-ul">
@@ -57,6 +74,7 @@ function display_menu(){
       <?php
 
 }
+
 
 
 

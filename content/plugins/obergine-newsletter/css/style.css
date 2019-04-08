@@ -1,0 +1,8 @@
+.newsletter {
+    margin: 1rem 3rem;
+}
+
+.newsletter-title {
+  padding-bottom: 1rem;
+  border-bottom: 2px dotted black;
+}
