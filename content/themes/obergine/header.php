@@ -34,7 +34,7 @@
         
         <div class="header__header-up__head">
             
-            <a href="<?php echo home_url(); ?>"><img class="header__header-up__head__image <?= $nav ?>" src="http://localhost/apotheose/wordpress/obergine/potager-party/content/uploads/2019/04/logo_vert_clean_sans_titre_png-1.png" alt=""><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__<?= $nav2 ?>"><?= $part1; ?></span><?= $part2; ?></h1></a>
+            <a href="<?php echo home_url(); ?>"><img class="header__header-up__head__image <?= $nav ?>" src="http://92.243.16.243/potager-party/content/uploads/2019/04/logo_vert_clean_sans_titre_png.png " alt=""><h1 class="header__header-up__head__title"> <span class="header__header-up__head__title__<?= $nav2 ?>"><?= $part1; ?></span><?= $part2; ?></h1></a>
         </div>
 
 
@@ -107,11 +107,12 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline my-2 my-lg-0" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">                
-                    <input type="hidden" name="search" value="advanced">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" id="searchsubmit" value="Search" type="submit">Search</button>
-                </form>
+                <form class="header__header-bot__search-bar__form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <input type="hidden" name="search" value="advanced">
+            <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
+            <button class="input-group-text btn btn-outline-success my-2 my-sm-0" type="submit" id="searchsubmit"><i class="form-group fa fa-search text-white"
+        aria-hidden='true'></i></button>            
+            </form>
                 </div>
             </nav>
         </div>
@@ -125,11 +126,10 @@
             <input type="hidden" name="search" value="advanced">
             <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
             <button class="input-group-text" type="submit" id="searchsubmit"><i class="form-group fa fa-search text-white"
-        aria-hidden='true'></i></button>
-                
-
+        aria-hidden='true'></i></button>            
             </form>
         </div>
+
 
         <div class="header__header-bot__menu">
                 <?php wp_nav_menu( array('theme_location' => 'header-menu') ); ?>
