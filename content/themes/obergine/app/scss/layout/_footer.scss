@@ -13,7 +13,7 @@
     
 
     &__nav {
-        width: 30%;
+        width: auto;
         
         
         &__list {
@@ -34,17 +34,13 @@
         }
     }
 
-    #menu-footer-nav-menu {
-        :hover {
-            text-decoration: none;
-            color: $color-title-primary;
-        }
-    }
+
 
     &__social-link {
         padding-left: $gutter-smale / 2;
-        min-width: 20%;
+        width: auto;
         display: flex;
+        
 
         i {
 
@@ -60,6 +56,8 @@
         }
         
     }
+
+    
 
     &__newsletter {
 
@@ -77,14 +75,22 @@
     }
 }
 
+
 // Liste des liens du menu de navigation généré par Wordpress
 
 #menu-footer-nav-menu {
+
+
+    :hover {
+        text-decoration: none;
+        color: $color-title-primary;
+    }
 
     li {
 
         a {
             color: $color-secondary;
+
 
         }
 
