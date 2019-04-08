@@ -14,7 +14,7 @@ get_header();
         </div>
 
         <div class="faq-page__container__question">
-            <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i>Modifier mes informations personnelles</h2>
+            <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i> Modifier mes informations personnelles</h2>
             <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Rendez-vous sur la page <a href="<?php echo home_url(). '/mon-compte/edit-account';?>">mon compte</a></p>
         </div>
 

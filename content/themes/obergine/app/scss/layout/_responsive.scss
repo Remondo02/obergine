@@ -139,6 +139,7 @@
   @media (min-width: 768px) {
 
     // affichage sous d'autres navigateurs que Chrome
+
     body {
 
         .other-nav {
@@ -151,6 +152,13 @@
         font-weight: 600;
         font-size: 1.1em;
         color: $color-primary;
+    }
+
+
+    // Premiere lettre du titre sur la page plantes potagères et blog dans un navigateur AUTRE que Chrome
+    .header__header-up__head__title__span-show {
+        color: $color-primary;
+        font-weight: 600;
     }
 
     //header woocommerce

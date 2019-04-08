@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25150885ccea4b4cd0e57efb109c544a",
+    "content-hash": "58d6750f433d82ba56991a41a85fa90d",
     "packages": [
         {
             "name": "composer/installers",
@@ -312,24 +312,6 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.1.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/contact-form-7/"
-        },
-        {
             "name": "wpackagist-plugin/favorites",
             "version": "2.3.1",
             "source": {
@@ -346,42 +328,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/favorites/"
-        },
-        {
-            "name": "wpackagist-plugin/flamingo",
-            "version": "1.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/flamingo/",
-                "reference": "tags/1.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/flamingo.1.9.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/flamingo/"
-        },
-        {
-            "name": "wpackagist-plugin/hello-dolly",
-            "version": "1.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/hello-dolly/",
-                "reference": "tags/1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/hello-dolly/"
         },
         {
             "name": "wpackagist-plugin/var-dumper",
@@ -474,24 +420,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/what-the-file/"
-        },
-        {
-            "name": "wpackagist-plugin/woocommerce-menu-extension",
-            "version": "1.6.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woocommerce-menu-extension/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-extension.zip?timestamp=1553089904"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woocommerce-menu-extension/"
         }
     ],
     "aliases": [],
