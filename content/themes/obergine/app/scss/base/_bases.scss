@@ -86,3 +86,38 @@ main {
         
     
 }
+
+// a de retour à la home 
+
+.back-to-home-container-link {
+    border: 1px solid $color-title-primary;
+    padding: .5em;
+    color: #0F9AFC;
+
+    transition : padding-left 1s;
+
+
+    &:hover {
+        text-decoration: none;
+        background-color: $color-title-primary;
+        color: white;
+        padding-left: 1.5em;
+    }
+
+    
+}
+
+// compteur du panier 
+
+.cart-contents-count {
+    padding-right: .5em;
+    color: white;
+
+    
+}
+
+.cart-contents {
+    &:hover {
+        text-decoration-line: none;
+    }
+}

@@ -53,3 +53,12 @@
     display: flex;
     flex-direction: column;
 }
+
+.home-page__post__head__content__head__product__link {
+    color: black;
+
+    &:hover {
+        text-decoration-line: none;
+        color: $color-title-secondary;
+    }
+}
