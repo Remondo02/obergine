@@ -24,6 +24,7 @@ let config = {
     app: './app/js/app.js',
     burger: './app/js/burger.js',
     rellax: './app/js/rellax.js',
+    scroll: './app/js/scroll.js',
     meteo: './app/js/meteo.js',
     main: './app/scss/main.scss'
   },

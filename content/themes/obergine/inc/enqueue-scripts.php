@@ -34,4 +34,11 @@ function obergine_enqueue_scripts()
         false,
         true
     );
+    wp_enqueue_script(
+        'obergine-script-scroll',
+        get_theme_file_uri( 'public/js/scroll.js' ),
+        [],
+        false,
+        true
+    );
 }
