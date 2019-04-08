@@ -121,3 +121,11 @@ main {
         text-decoration-line: none;
     }
 }
+
+// Taille de l'image des articles
+
+.home-pagepostheadimageimg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: $gutter-smale / 2;
+}
