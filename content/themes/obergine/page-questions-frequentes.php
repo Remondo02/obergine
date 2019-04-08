@@ -14,7 +14,7 @@ get_header();
         </div>
 
         <div class="faq-page__container__question">
-            <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i>Modifier mes informations personnelles</h2>
+            <h2 class="faq-page__container__question__ask"><i class="fa fa-arrow-right" aria-hidden="true"></i> Modifier mes informations personnelles</h2>
             <p class="faq-page__container__question__answer d-none"><i class="fa fa-info-circle" aria-hidden="false"></i> Rendez-vous sur la page <a href="<?php echo home_url(). '/mon-compte/edit-account';?>">mon compte</a></p>
         </div>
 
@@ -33,6 +33,10 @@ get_header();
   
    
 </main>
+
+<div class="back-to-home-container back-to-home-container-home-page back-to-home-container-archive-plant">
+    <a class="back-to-home-container-link" href="<?= home_url(); ?>" class="main__container__main-container__back-to-home__link">Retourner à l'accueil <i class="fa fa-home" aria-hidden="true"></i></a>
+</div>
 
 <?php
 get_footer();

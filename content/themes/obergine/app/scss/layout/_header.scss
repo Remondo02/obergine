@@ -142,6 +142,7 @@
                         
                     }
                     
+                    
                     >a {
                         padding: 0.5em;
                         color: black;
@@ -187,5 +188,16 @@
     display:flex;
 }
 
+// logo 
 
+.header__header-up__head__image {
+    max-width: 5%;
+    height: auto;
+}
 
+.woocommerce-page {
+    .header__header-up__head__image {
+        max-width: 5%;
+        height: 3%;
+    }
+}

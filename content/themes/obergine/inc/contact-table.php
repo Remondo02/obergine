@@ -37,37 +37,29 @@ function obergine_contact_table_insert() {
 
     $contact_table_name = $wpdb->prefix . 'contact_table';
 
-    $myrows = $wpdb->get_results( "SELECT * FROM wp_contact_table" );
+    
 
-    dump($_POST);
-
-    // $email = $_POST['email'];
-    // dump($email);
-
-    // $userNewsletterMail = [];
-    // foreach($myrows as $userNewsletter){
-    //     $userNewsletterMail[] = $userNewsletter->mail;
-    // }
-
-    // dump($userNewsletterMail);
-
-    // if(isset($email)){
-    //     if(in_array($email, $userNewsletterMail)){
-    //         echo 'Adresse déjà dans la BDD';
-    //     }
-    //     else{
-    //         echo 'Nouveau mail ajouté';
-    //         $wpdb->insert(
-    //             'wp_newsletter_table',
-    //             array(
-    //                 'mail' => $email,
-    //             ),
-    //             array(
-    //                 '%s',
-    //             )
-    //         );
-    //     }
-    // }
+    if(!empty($_POST['name-contact'])){
+        $nameContact = $_POST['name-contact'];
+        $surnameContact = $_POST['surname-contact'];
+        $emailContact = $_POST['email-contact'];
+        $subjectContact = $_POST['subject-contact'];
+        $messageContact = $_POST['message-contact'];
+        echo 'Nous avons bien reçu votre demande';
+            $wpdb->insert(
+                'wp_contact_table',
+                array(
+                    'name'      => $nameContact,
+                    'surname'   => $surnameContact,
+                    'mail'      => $emailContact,
+                    'subject'   => $subjectContact,
+                    'message'   => $messageContact
+                ),
+                array(
+                    '%s',
+                )
+            );
+    }
 }
 
 obergine_contact_table_insert();

@@ -4,7 +4,8 @@ var app = {
   init: function() {
     console.log('init app');
 
-    app.homeUrl = 'http://localhost/html/apotheose/potager-party/';
+
+    app.homeUrl = 'http://localhost/Specialisation/WordPress/Apotheose/potager-party';
 
     if(document.URL === app.homeUrl + 'mon-compte/'){
       app.monCompte();

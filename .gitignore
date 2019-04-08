@@ -11,6 +11,7 @@
 !/content/plugins/obergine-settings
 !/content/plugins/obergine-banner
 !/content/plugins/obergine-newsletter
+!/content/plugins/obergine-contact-form
 
 /content/themes/*
 !/content/themes/obergine

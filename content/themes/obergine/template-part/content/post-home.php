@@ -11,9 +11,8 @@
             
             <div class="home-page__post__head__content">
                 <div class="home-page__post__head__content__head">
-                    <h2 class="home-page__post__head__content__head__title"><?php the_title(); ?></h2>
+                    <h2  class="home-page__post__head__content__head__title"><a class="home-page__post__head__content__head__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <span class="home-page__post__head__content__head__author"><?php the_author_posts_link(); ?></span>
-                    <p class="home-page__post__head__content__head__date"><?php the_date('d-m-Y'); ?></p>
                 </div>
             </div>
         </div>

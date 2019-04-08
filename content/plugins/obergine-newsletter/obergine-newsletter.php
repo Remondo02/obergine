@@ -5,8 +5,30 @@ Author: La team des AS
 Version: 1.0
 */
 
+// Style CSS
 
+add_action( 'admin_print_styles' , 'obergine_newsletter_admin_style' );
+  
+function obergine_newsletter_admin_style() {
+  
+  wp_enqueue_style(
+    'obergine_newsletter_plugin_style',
+    plugins_url('obergine-newsletter/css/style.css')
+  );
+}
 
+// JS
+
+add_action( 'admin_enqueue_scripts', 'obergine_newsletter_admin_script' );
+
+function obergine_newsletter_admin_script(){
+
+  wp_enqueue_script(
+    'obergine_newsletter_plugin_script',
+    plugins_url('obergine-newsletter/js/app.js')
+  );
+
+}
 
 // Function pour récupérer les e-mails dans la BDD
 function obergine_newsletter_table_selection() {
@@ -17,9 +39,7 @@ function obergine_newsletter_table_selection() {
 
     $userNewsletterMail = [];
     foreach($myrows as $userNewsletter){
-        echo '<ul>';
-        echo '<li>' . $userNewsletter->mail . '</li>';
-        echo '<ul>';
+        echo '<li class="newsletter-mail">' . $userNewsletter->mail . '</li>';
     }
 }
 
@@ -31,7 +51,7 @@ function newsletter_plugin_setup_menu(){
           'Newsletter contacts', 
           'Newsletter', 
           'manage_options', 
-          'test-plugin', 
+          'newsletter-plugin', 
           'display_menu',
           'dashicons-email-alt',
           8
@@ -42,13 +62,20 @@ function newsletter_plugin_setup_menu(){
 function display_menu(){
 
       ?>
-      <h3 class="newsletter-title">Voici les incriptions à la newsletter</h3>
 
+      <div class="newsletter">
+        <h3 class="newsletter-title">Voici les incriptions reçues à la newsletter</h3>
+        <ul class="newsletter-ul">
+            <?php
+            obergine_newsletter_table_selection();
+            ?>
+        </ul>
+      </div>
       <?php
-      obergine_newsletter_table_selection();
 
 }
-?>
+
+
 
 
 

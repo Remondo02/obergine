@@ -1,11 +1,31 @@
-.meteo {
+.card:last-child {
+    margin-bottom:2rem;
+}
+.temp-header {
+    margin: auto 0;
+}
+.temp-button {
+        margin:.5rem 0;
+        max-width: 135px;
+}
+.weather-days-container {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: space-around;
     max-width: 100%;
-
-    &__info {
-        text-align: center;
-        margin: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    
+    .temp-day-value {
+        margin-top:-1.5rem;
+    }
+    .temp-thumbnail {
+        margin-bottom:1.5rem;
+    }
+    .condition {
+        margin-bottom: 0;
+            @media (max-width: 668px) {
+                margin-bottom: 1.5rem;
+            }   
     }
 }
