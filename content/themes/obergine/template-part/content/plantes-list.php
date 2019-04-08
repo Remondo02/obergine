@@ -41,7 +41,7 @@
                 
                 <div class="home-page__post__head__content">
                     <div class="home-page__post__head__content__head">
-                        <h2 class="home-page__post__head__content__head__product"><?php the_title(); ?></h2>
+                        <h2 class="home-page__post__head__content__head__product"><a class="home-page__post__head__content__head__product__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <span class="home-page__post__head__content__head__family"><?php the_field('famille'); ?></span>
                     </div>
                     
