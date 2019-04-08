@@ -109,8 +109,8 @@
                 </ul>
                 <form class="header__header-bot__search-bar__form" method="get" id="advanced-searchform" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
             <input type="hidden" name="search" value="advanced">
-            <input class="header__header-bot__search-bar__form__input" type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
-            <button class="input-group-text btn btn-outline-success my-2 my-sm-0" type="submit" id="searchsubmit"><i class="form-group fa fa-search text-white"
+            <input class="header__header-bot__search-bar__form__input col-7" type="text" value="" placeholder="<?php _e( 'Rechercher une plante', 'textdomain' ); ?>" name="s" id="name" />
+            <button class="input-group-text btn btn-outline-success my-0 my-sm-0" type="submit" id="searchsubmit"><i class="form-group fa fa-search text-white"
         aria-hidden='true'></i></button>            
             </form>
                 </div>
