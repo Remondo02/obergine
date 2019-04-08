@@ -29,7 +29,7 @@ get_header();
             }  
           
 
-        } else echo 'Auncune plantes trouvées';
+        } else echo 'Aucune plante trouvée';
 
 
         
